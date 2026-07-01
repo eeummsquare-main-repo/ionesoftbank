@@ -1143,44 +1143,21 @@ $(document).ready(function () {
 <% IF PopStr<>"" Then %>
 <div id="popLayer" class="disNone">
 	<div id="moPopArea">
-		<div class="moPop">
-			<div id="moPopRoll" class="f0">
-				<%=PopStr%>
-			</div>
-
-			<div class="moPopClose">
-				<button type="button" class="toDay_close" id="todayPopClose"><span>오늘 하루 동안 열지 않기</span></button>
-				<button type="button" class="close" id="layerPopClose"><span>닫기</span></button>
-			</div>
-		</div>
+		<%=PopStr%>
 	</div>
 
 	<style type="text/css">
 	#popLayer{width:100%; height:100%; background-color: rgba(0,0,0,0.7); font-size:0; line-height:0; position:fixed; left:0; top:0; z-index:99; overflow:hidden; overflow-y:auto;}
 	#popLayer.disNone{display:none !important;}
-	#popLayer #moPopArea{width:100vw; height:100vh; padding:10rem 3rem; box-sizing: border-box; display: flex; align-items: center; justify-content: center; -ms-flex-align:center;}
+	#popLayer #moPopArea{width:100vw; min-height:100vh; padding:6rem 3rem; box-sizing: border-box; display: flex; flex-wrap:wrap; align-items: flex-start; justify-content: center; gap:3rem; -ms-flex-align:center;}
 	#popLayer #moPopArea .moPop{width:100%; max-width:50rem; margin:0; position: relative;}
-	#popLayer #moPopArea #moPopRoll.multi{max-width:none;}
-	#popLayer #moPopArea .moPop.multi{max-width:90rem;}
-	#popLayer #moPopRoll.multi .slider{padding:0 1rem; box-sizing:border-box;}
-	#popLayer #moPopRoll.multi .slick-prev,
-	#popLayer #moPopRoll.multi .slick-next{width:4.4rem; height:4.4rem; padding:0; background:rgba(0,0,0,0.55); border:none; border-radius:50%; font-size:0; line-height:0; color:transparent; position:absolute; top:50%; transform:translateY(-50%); z-index:10; cursor:pointer;}
-	#popLayer #moPopRoll.multi .slick-prev{left:-1.5rem;}
-	#popLayer #moPopRoll.multi .slick-next{right:-1.5rem;}
-	#popLayer #moPopRoll.multi .slick-prev:before,
-	#popLayer #moPopRoll.multi .slick-next:before{content:""; width:1rem; height:1rem; border-top:2px solid #fff; border-right:2px solid #fff; display:block; position:absolute; top:50%; left:50%;}
-	#popLayer #moPopRoll.multi .slick-prev:before{transform:translate(-30%,-50%) rotate(-135deg);}
-	#popLayer #moPopRoll.multi .slick-next:before{transform:translate(-70%,-50%) rotate(45deg);}
-	#popLayer #moPopRoll.multi .slick-prev:hover,
-	#popLayer #moPopRoll.multi .slick-next:hover{background:rgba(0,0,0,0.8);}
-	#popLayer #moPopArea #moPopRoll{background-color: #fff; border-radius:2rem 2rem 0 0; overflow:hidden; box-shadow:0 2rem 4rem rgba(0,0,0,0.3);}
+	#popLayer #moPopArea .moPop.disNone{display:none !important;}
+	#popLayer .moPopRoll{background-color: #fff; border-radius:2rem 2rem 0 0; overflow:hidden; box-shadow:0 2rem 4rem rgba(0,0,0,0.3);}
 	#popLayer .slider{width:100%; border-radius:2rem 2rem 0 0; font-size:0; line-height:0; box-sizing:border-box; overflow:hidden;}
 	#popLayer .slider img{width:100%; vertical-align: top;}
-	#popLayer .slider#HKeditorContent{padding:3rem 0 6rem; font-size:1.8rem; line-height:1.5; color: #666;}
-	#popLayer .slider#HKeditorContent>*{padding-left:3rem; padding-right:3rem;}
-
-	#popLayer .slider#HKeditorContent img{width:auto;}
-	#popLayer #moPopRoll.roll .slider{}
+	#popLayer .slider[id^="HKeditorContent"]{padding:3rem 0 6rem; font-size:1.8rem; line-height:1.5; color: #666;}
+	#popLayer .slider[id^="HKeditorContent"]>*{padding-left:3rem; padding-right:3rem;}
+	#popLayer .slider[id^="HKeditorContent"] img{width:auto;}
 
 	#popLayer .layerPopClose{width:3rem; height:3rem; margin:0; padding:0; font-size:0; line-height:0; position: absolute; right:1.5rem; top:1.5rem; z-index:6; transform:rotate(45deg);}
 	#popLayer .layerPopClose:before,
@@ -1198,99 +1175,53 @@ $(document).ready(function () {
 	#popLayer .moPopClose button.close:before{right:0;}
 	#popLayer .moPopClose a{background-color: #3617cd; color:#fff}
 
-	#popLayer .slick-dots{width:100%; padding:0; text-align: center; position: absolute; left:0; bottom:2rem; z-index:7;}
-	#popLayer .slick-dots>li{margin:0 0.7rem; display:inline-block; vertical-align: top;}
-	#popLayer .slick-dots>li+li{}
-	#popLayer .slick-dots>li button{width:1.4rem; height:1.4rem; padding:0; background-color:#d4d7d9; border:none; font-size:0; line-height:0; position: relative; cursor: pointer; border-radius:999px; overflow:hidden; transition: all .3s ease-out;}
-	#popLayer .slick-dots>li.slick-active button{width:30px; background-color: #333;}
-
-	#popLayer #moPopArea #moPopRoll{opacity: 0; visibility: hidden; transition: opacity 1s ease;}
-	#popLayer #moPopArea #moPopRoll.open,
-	#popLayer #moPopArea #moPopRoll.slick-initialized{visibility: visible; opacity: 1;}
+	#popLayer .moPopRoll{opacity: 1; visibility: visible;}
 
 	@media only screen and (max-width : 840px){
 		.hd_pops{left:2rem !important; right:2rem !important;}
-		.hd_pops_con{}
-
-		#popLayer{}
-		#popLayer #moPopArea{}
+		#popLayer #moPopArea{padding:3rem 2rem; gap:2rem;}
 		#popLayer #moPopArea .moPop{max-width:100%;}
-		#popLayer #moPopArea #moPopRoll{}
-		#popLayer .slider{}
-		#popLayer .slider img{}
-		/*
-		#popLayer .slider#HKeditorContent{padding:20px; font-size:20px; line-height:1.5; color: #666;}
-		#popLayer .slider#HKeditorContent img{width:auto;}
-
-		#popLayer #moPopRoll.roll .slider{}
-		*/
-		#popLayer .slider#HKeditorContent{padding:3rem 3rem 6rem; font-size:2.4rem;}
-
-		#popLayer .layerPopClose{width:4rem; height:4rem; right:2rem; top:2rem;}
-		#popLayer .layerPopClose:before{margin:-1px 0 0 -2rem;}
-		#popLayer .layerPopClose:after{margin:-2rem 0 0 -1px;}
-
-		#popLayer .moPopClose{}
+		#popLayer .slider[id^="HKeditorContent"]{padding:3rem 3rem 6rem; font-size:2.4rem;}
 		#popLayer .moPopClose>*{height:8rem; font-size:2rem;}
-		/*
-		#popLayer .moPopClose button{font-size:1.8rem; line-height:2.4rem;}
-		#popLayer .moPopClose button:before{width: 2.4rem; height: 2.4rem; font-size:1.8rem; line-height:2.6rem;}
-		#popLayer .moPopClose button.toDay_close{padding-left:3.2rem;}
-		#popLayer .moPopClose button.close{padding-right:3.2rem}
-		*/
-
-		#popLayer .slick-dots{}
-		#popLayer .slick-dots>li{}
-		#popLayer .slick-dots>li+li{}
-		#popLayer .slick-dots>li button{width:1.8rem; height:1.8rem;}
-		#popLayer .slick-dots>li.slick-active button{}
 	}
 	</style>
 </div>
 
 <script type="text/javascript">
-var popHtml = $("#moPopRoll").html();
-
-if(getCookie("popLayer")!="done"){
-	if (popHtml!="")	{
-		$("#popLayer").removeClass("disNone")
-	}
-}
-$(document).on("click","#layerPopClose",function(){
-	$("#popLayer").addClass("disNone")
-});
-
-$(document).on("click","#todayPopClose",function(){
-	closetoLayer('popLayer')
-	$("#popLayer").addClass("disNone")
-});
-
-var moPop = $("#moPopRoll .slider").length;// 로그인쪽 위 베너
-if(moPop > 1){
-	$("#moPopRoll").addClass("roll multi").closest(".moPop").addClass("multi");
-	$("#moPopRoll").slick({
-		speed: 300,
-		// autoplay: true,
-		slidesToShow: Math.min(moPop, 2),
-		slidesToScroll: 1,
-		arrows: true,
-		dots: true,
-		adaptiveHeight: false,
-		centerMode: false,
-		responsive: [
-			{
-				breakpoint: 840,
-				settings: {
-					slidesToShow: 1,
-					centerMode: true,
-					centerPadding: '0'
-				}
-			}
-		]
+$(function(){
+	// 개별 팝업 필터: '오늘 하루' 쿠키가 걸린 팝업 숨김
+	$("#popLayer .popItem").each(function(){
+		var idx = $(this).data("popidx");
+		if(getCookie("popLayer_"+idx)=="done"){
+			$(this).addClass("disNone");
+		}
 	});
-}else{
-	$("#moPopRoll").addClass("open");
-}
+
+	// 표시할 팝업이 하나라도 있으면 오버레이 노출
+	if($("#popLayer .popItem").not(".disNone").length > 0){
+		$("#popLayer").removeClass("disNone");
+	}
+
+	// 개별 닫기
+	$(document).on("click", "#popLayer .popItemClose", function(){
+		var $item = $(this).closest(".popItem");
+		$item.addClass("disNone");
+		if($("#popLayer .popItem").not(".disNone").length === 0){
+			$("#popLayer").addClass("disNone");
+		}
+	});
+
+	// 개별 '오늘 하루 열지 않기' — popidx별 쿠키
+	$(document).on("click", "#popLayer .popItemToday", function(){
+		var idx = $(this).data("popidx");
+		setCookie('popLayer_'+idx, "done", 1);
+		var $item = $(this).closest(".popItem");
+		$item.addClass("disNone");
+		if($("#popLayer .popItem").not(".disNone").length === 0){
+			$("#popLayer").addClass("disNone");
+		}
+	});
+});
 </script>
 <% End IF %>
 

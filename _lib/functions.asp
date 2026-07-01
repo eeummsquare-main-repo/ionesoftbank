@@ -2534,6 +2534,7 @@ END Sub
 SUB GET_PopInfo_Mobile(Langsort, mobileYN)
 	Dim NowDate,Allrec,i
 	Dim Sort,TItle,Content,HtmlYN,LinkUrl,OutputImg
+	Dim innerHtml, LinkTag, closeATag
 	NowDate=Year(date())&AddZero(Month(Date()))&AddZero(Day(Date()))
 	Allrec = GetRows_RecordSet("FM_UP_PopupList(1,'"&NowDate&"','"&Langsort&"','"&mobileYN&"')")
 
@@ -2543,12 +2544,26 @@ SUB GET_PopInfo_Mobile(Langsort, mobileYN)
 		For i=0 To Ubound(Allrec,2)
 			popidx = Allrec(0,i) : sort = Allrec(5,i) : Title = Allrec(6,i) : Content = Allrec(7,i) : HtmlYn = Allrec(8,i) : LinkUrl = Allrec(9,i) : OutputImg = Allrec(10,i)
 
+			LinkTag = ""
+			closeATag = ""
 			IF Sort=0 Then
-				PopStr = PopStr & "<div class=""slider"" id='HKeditorContent' name='HKeditorContent'>"&Content&"</div>"
+				innerHtml = "<div class=""slider"" id='HKeditorContent_"&popidx&"' name='HKeditorContent'>"&Content&"</div>"
 			Else
-				IF LinkUrl<>"" Then LinkTag = "<a href=""javascript:location.href='"&LinkUrl&"'"">"
-				PopStr = PopStr & "<div class=""slider"">"&LinkTag&"<img src='/upload/popup/"&OutPutImg&"' border='0' align='absmiddle'></a></div>"
+				IF LinkUrl<>"" Then
+					LinkTag = "<a href=""javascript:location.href='"&LinkUrl&"'"">"
+					closeATag = "</a>"
+				End IF
+				innerHtml = "<div class=""slider"">"&LinkTag&"<img src='/upload/popup/"&OutPutImg&"' border='0' align='absmiddle'>"&closeATag&"</div>"
 			End IF
+
+			PopStr = PopStr & _
+				"<div class=""moPop popItem"" data-popidx=""" & popidx & """>" & _
+					"<div class=""moPopRoll open"">" & innerHtml & "</div>" & _
+					"<div class=""moPopClose"">" & _
+						"<button type=""button"" class=""toDay_close popItemToday"" data-popidx=""" & popidx & """><span>오늘 하루 동안 열지 않기</span></button>" & _
+						"<button type=""button"" class=""close popItemClose""><span>닫기</span></button>" & _
+					"</div>" & _
+				"</div>"
 		Next
 	End IF
 END Sub
