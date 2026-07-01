@@ -13,8 +13,14 @@ Dim NoticeRec,FreeRec
 Dim popTs_, popVal_
 popTs_  = Application("idx_popmob_0_1_ts")
 popVal_ = Application("idx_popmob_0_1_data")
-IF IsDate(popTs_) And DateDiff("s", CDate(popTs_), Now()) < 300 Then
-	PopStr = popVal_
+IF IsDate(popTs_) Then
+	IF DateDiff("s", CDate(popTs_), Now()) < 300 Then
+		PopStr = popVal_
+	Else
+		CALL GET_PopInfo_Mobile(0,1)
+		Application("idx_popmob_0_1_ts")   = Now()
+		Application("idx_popmob_0_1_data") = PopStr
+	End IF
 Else
 	CALL GET_PopInfo_Mobile(0,1)
 	Application.Lock
