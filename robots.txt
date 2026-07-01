@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+Disallow: /backoffice/
+Disallow: /_lib/
+Disallow: /_error/
+Disallow: /_gabia/
+Disallow: /_proc/
+Disallow: /ajaxpage/
+Disallow: /mail/
+Disallow: /member/
+Disallow: /mypage/
+Disallow: /upload/board/
+Disallow: /upload/editordata/
+Disallow: /board/ok_bbswrite.asp
+Disallow: /board/bbsSendMail.asp
+Disallow: /search.asp
+
+Sitemap: https://duzon119.co.kr/sitemap.xml

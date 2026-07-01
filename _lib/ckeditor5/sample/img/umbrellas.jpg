@@ -1,0 +1,81 @@
+/* .ck.ck-editor{max-width:100%; width:100%;}
+.ck.ck-content{min-height:200px;}
+
+.ck.ck-content{
+	font-size:1.5rem;
+}
+*/
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+:root,
+html{color: #666; font-size: 10px;}
+
+.ck.ck-content{font-size: 10px !important; line-height:1.4; min-height: 20rem;	/*margin:inherit; padding:inherit; list-style:inherit; text-decoration:inherit;*/}
+.ck.ck-reset.ck-editor{width:100%;}
+.ck.ck-content>*{padding: revert; list-style: revert; font-size: 1.6rem; line-height:1.6; color: revert; text-decoration: revert;}
+/*
+.ck.ck-content input,
+.ck.ck-content select,
+.ck.ck-content textarea,
+.ck.ck-content strong,
+.ck.ck-content em,
+.ck.ck-content p,
+.ck.ck-content h1,
+.ck.ck-content h2,
+.ck.ck-content h3,
+.ck.ck-content h4,
+.ck.ck-content span,
+.ck.ck-content td,
+.ck.ck-content button,
+.ck.ck-content th,
+.ck.ck-content li,
+.ck.ck-content a,
+.ck.ck-content i,
+.ck.ck-content b{font-style: revert; margin: revert; font-family: 'Pretendard', sans-serif;}
+.ck.ck-content ul,
+.ck.ck-content ol{margin: revert; padding: revert; list-style: revert;}
+.ck.ck-content a{text-decoration: revert; color:revert} */
+.ck.ck-content .mobile{display:none;}
+
+.ck.ck-content ul,
+.ck.ck-content li,
+.ck.ck-content ol{margin: revert; padding: revert; list-style: revert;}
+
+.ck.ck-content>*{font-size: 1.6rem; line-height: 1.4;}
+
+/* .ck.ck-content h2{font-size:2em; line-height:1.4;} */
+.ck.ck-content h2{font-size:2.5em; line-height:1.4;}
+/* .ck.ck-content h3{font-size:1.8em; line-height:1.4;} */
+.ck.ck-content h3{font-size:2em; line-height:1.4;}
+/* .ck.ck-content h4{font-size:1.6em; line-height:1.4;} */
+.ck.ck-content h4{font-size:1.5em; line-height:1.4;}
+.ck.ck-content h1,
+.ck.ck-content h2,
+.ck.ck-content h3,
+.ck.ck-content h4{margin-bottom:0;}
+
+.ck.ck-content p{margin:0;}
+
+
+.ck.ck-content pre {
+    padding: 1em;
+}
+
+/*
+* {margin: 0;padding: 0;list-style: auto;text-decoration: auto;font-family: 'Pretendard', sans-serif;box-sizing: border-box;}
+
+input, select, textarea, strong, em, p, h1, h2, h3, h4, span, td, button, th, li, a, i, b{font-style: inherit;}
+i {font-style: italic;}
+u {text-decoration: underline;}
+
+ol{display: block;padding: revert;list-style-type: disc;margin-block-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;padding-inline-start: 40px;}
+
+ul{display: block;padding: revert;;list-style-type: disc;margin-block-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;padding-inline-start: 40px;}
+
+
+
+가나다라마바사아자차카타파하
+가나다라마바사아자차카타파하
+가나다라마바사아자차카타파하
+가나다라마바사아자차카타파하
+가나다라마바사아자차카타파하
+*/

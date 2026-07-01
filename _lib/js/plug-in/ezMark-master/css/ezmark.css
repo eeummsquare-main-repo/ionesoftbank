@@ -1,0 +1,57 @@
+/**
+ * CSS File for ezMark jQuery Plugin
+ *
+ **/
+.ez-hide { opacity: 0; filter:alpha(opacity=0); }
+.ez-checkbox {
+	width:14px;
+	background: transparent url('/images/common/bg_check_off.png') 0 50% no-repeat;
+	display:inline-block;
+}
+
+.ez-radio {
+	width:14px;
+	background: transparent url('/images/common/bg_radio_off.png') 0 50% no-repeat;
+	display:inline-block;
+}
+
+.ez-checked { 
+	background: transparent url('/images/common/bg_check_on.png') 0 50% no-repeat;
+	display:inline-block;
+}
+.ez-selected { 
+	background: transparent url('/images/common/bg_radio_on.png') 0 50% no-repeat;
+	display:inline-block;
+}
+
+.ez-checkbox-green {
+	background: transparent url('../images/checkbox-green.png') 0 50% no-repeat;
+	display:inline-block;
+	*display: inline;
+}
+.ez-checkbox2 {
+	width:20px;
+	background: transparent url('/images/support/bg_cir.png') 0 50% no-repeat;
+	background-size:100%;
+	display:inline-block;
+}
+.ez-checkbox2_checked {
+	background: transparent url('/images/support/bg_cir_on.png') 0 50% no-repeat;
+	background-size:100%;
+	display:inline-block;
+}
+.ez-radio2 {
+	width:15px;
+	background: transparent url('/images/support/bg_radio2.png') 0 50% no-repeat;
+	background-size:100%;
+	display:inline-block;
+}
+.ez-radio2_selected {
+	width:15px;
+	background: transparent url('/images/support/bg_radio2_on.png') 0 50% no-repeat;
+	background-size:100%;
+	display:inline-block;
+}
+
+.ez-checked-green { background-position: 0 -14px; }
+.ez-checkbox, .ez-radio { zoom: 1; *display:inline; _height:28px; }

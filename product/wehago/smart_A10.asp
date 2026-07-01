@@ -1,0 +1,603 @@
+<!--#include virtual = _lib/common.asp-->
+<%
+GB_seoTitle = "WEHAGO 비즈니스 플랫폼 — 모바일 ERP·결재·근태 | 아이원소프트뱅크"
+GB_seoDescription = "WEHAGO 비즈니스 플랫폼 — 모바일에서 회계·세무·결재·근태·문서를 한 번에. 더존 SmartA10 연동 + iOS/Android 앱 지원. 무료 가입 1877-1859."
+GB_seoKeywords = "WEHAGO,위하고,SmartA10,모바일ERP,클라우드ERP,모바일결재,모바일근태"
+%>
+<!DOCTYPE html>
+<html lang="ko" class="sub">
+<head>
+	<!--#include virtual=common/include/head.asp-->
+</head>
+
+<body data-pgCode="0102">
+
+<!--[s] Skip To Content -->
+<a href="#contents" class="skip">&raquo; 본문 바로가기</a>
+<!--[e] Skip To Content -->
+
+<div id="wrap">
+	<!--#include virtual=common/include/header.asp-->
+	<!--#include virtual=common/include/subTop.asp-->
+
+    <div id="" class="inConts1720">
+        <ul class="amaranth10__list">
+            <li><a href="javascript:void(0);" class="active">Smart A10</a></li>
+            <li><a href="/product/wehago/cooperation.asp">협업서비스</a></li>
+            <li><a href="/product/wehago/extraservice.asp">부가서비스</a></li>
+            <li><a href="/product/wehago/linkedservice.asp">전문가 연계서비스</a></li>
+        </ul>
+        <div class="contWrap smart_A10 wehago">
+            <div class="wehago_01">
+                <div class="cont_txt">
+                    <h5>
+                        기업에 필요한 다양한 업무환경을 제공하는 비즈니스 플랫폼 WEHAGO
+                    </h5>
+                    <p>
+                        WEHAGO 웹·모바일로 언제 어디서나 편리한 업무를 경험하세요.
+                    </p>
+                </div>
+                <div class="wehago_slide">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="img"><img src="/images/sub/smart_A10__img01.png" alt=""></div>
+                                <div class="txt">
+                                    <ul>
+                                        <li><img src="/images/sub/smart_01__icon01.png" alt=""></li>
+                                        <li><img src="/images/sub/smart_01__icon02.png" alt=""></li>
+                                        <li><img src="/images/sub/smart_01__icon03.png" alt=""></li>
+                                    </ul>
+                                    <strong>자동 회계 처리 기능</strong>
+                                    <p>기업 거래정보 수집, 분개, 회계 전표 등 전 과정 자동처리</p>
+                                    <p>
+                                        세금계산서, 계산서, 신용카드, 현금영수증, 통장거래내역 <br />
+                                        자료자동수집
+                                    </p>
+                                    <p>
+                                        과거 회계처리 패턴 및 빅데이터 분석을 통한 자동분개 <br />
+                                        및 자동회계처리
+                                    </p>
+                                    <a href="#">리플릿 자세히 보기 <img src="/images/sub/wehago_slide__arr.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img"><img src="/images/sub/smart_A10__img01.png" alt=""></div>
+                                <div class="txt">
+                                    <strong>자동 회계 처리 기능</strong>
+                                    <p>기업 거래정보 수집, 분개, 회계 전표 등 전 과정 자동처리</p>
+                                    <p>
+                                        세금계산서, 계산서, 신용카드, 현금영수증, 통장거래내역 <br />
+                                        자료자동수집
+                                    </p>
+                                    <p>
+                                        과거 회계처리 패턴 및 빅데이터 분석을 통한 자동분개 <br />
+                                        및 자동회계처리
+                                    </p>
+                                    <a href="#">리플릿 자세히 보기 <img src="/images/sub/wehago_slide__arr.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img"><img src="/images/sub/smart_A10__img01.png" alt=""></div>
+                                <div class="txt">
+                                    <strong>자동 회계 처리 기능</strong>
+                                    <p>기업 거래정보 수집, 분개, 회계 전표 등 전 과정 자동처리</p>
+                                    <p>
+                                        세금계산서, 계산서, 신용카드, 현금영수증, 통장거래내역 <br />
+                                        자료자동수집
+                                    </p>
+                                    <p>
+                                        과거 회계처리 패턴 및 빅데이터 분석을 통한 자동분개 <br />
+                                        및 자동회계처리
+                                    </p>
+                                    <a href="#">리플릿 자세히 보기 <img src="/images/sub/wehago_slide__arr.png" alt=""></a>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="wehago_02">
+                <ul>
+                    <li class="first">
+                        <b>Solution Introduction</b>
+                        <strong>솔루션 소개</strong>
+                        <p>
+                            WEHAGO는 세무신고 특화형 ERP 솔루션으로 <br>
+                            기업의 독자적인 경영 혁신 경험을 제공하고 업무 효율성을 극대화합니다.
+                        </p>
+                    </li>
+                    <li class="contBox">
+                        <div class="img"><img src="/images/sub/smartSec2__img01.jpg" alt=""></div>
+                        <div class="txt">
+                            <b>회계관리</b>
+                            <div class="flex">
+                                <div>
+                                    <p>전표입력/장부관리</p>
+                                    <p>자동회계처리</p>
+                                    <p>결산/재무제표관리</p>
+                                </div>
+                                <div>
+                                    <p>부가가치세신고</p>
+                                    <p>고정자산관리</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contBox">
+                        <div class="img"><img src="/images/sub/smartSec2__img02.jpg" alt=""></div>
+                        <div class="txt">
+                            <b>급여관리</b>
+                            <div class="flex">
+                                <div>
+                                    <p>근로소득/퇴직소득</p>
+                                    <p>사업/기타소득</p>
+                                    <p>원천세신고</p>
+                                </div>
+                                <div>
+                                    <p>사회보험신고</p>
+                                    <p>연말정산관리</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contBox">
+                        <div class="img"><img src="/images/sub/smartSec2__img03.jpg" alt=""></div>
+                        <div class="txt">
+                            <b>인사관리</b>
+                            <div class="flex">
+                                <div>
+                                    <p>직원정보등록</p>
+                                    <p>급여관리</p>
+                                    <p>근로계약</p>
+                                </div>
+                                <div>
+                                    <p>부가가치세신고</p>
+                                    <p>고정자산관리</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contBox">
+                        <div class="img"><img src="/images/sub/smartSec2__img04.jpg" alt=""></div>
+                        <div class="txt">
+                            <b>물류관리</b>
+                            <div class="flex">
+                                <div>
+                                    <p>영업관리</p>
+                                    <p>구매관리</p>
+                                    <p>생산관리/외주관리</p>
+                                </div>
+                                <div>
+                                    <p>재고관리</p>
+                                    <p>채권채무현황</p>
+                                    <p>BI현황/전기이월</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contBox">
+                        <div class="img"><img src="/images/sub/smartSec2__img05.jpg" alt=""></div>
+                        <div class="txt">
+                            <b>법인조정</b>
+                            <div class="flex">
+                                <div>
+                                    <p>영리/비영리법인</p>
+                                    <p>특정외국법인신고</p>
+                                    <p>공익법인세무신고</p>
+                                </div>
+                                <div>
+                                    <p>성실신고확인사업자</p>
+                                    <p>법인지방소득세신고</p>
+                                    <p>법인세전자신고</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contBox">
+                        <div class="img"><img src="/images/sub/smartSec2__img06.jpg" alt=""></div>
+                        <div class="txt">
+                            <b>개인조정</b>
+                            <div class="flex">
+                                <div>
+                                    <p>종합소득세신고</p>
+                                    <p>주택임대사업자신고</p>
+                                    <p>종교인소득세신고</p>
+                                </div>
+                                <div>
+                                    <p>성실신고확인사업자신고</p>
+                                    <p>종소세전자신고</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contBox">
+                        <div class="img"><img src="/images/sub/smartSec2__img07.jpg" alt=""></div>
+                        <div class="txt">
+                            <b>전자세금계산서</b>
+                            <div class="flex">
+                                <div>
+                                    <p>영리/비영리법인</p>
+                                    <p>특정외국법인신고</p>
+                                    <p>공익법인세무신고</p>
+                                </div>
+                                <div>
+                                    <p>성실신고확인사업자</p>
+                                    <p>법인지방소득세신고</p>
+                                    <p>법인세전자신고</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="wehago_03 view-full">
+            <ul>
+                <li>
+                    <div class="inner">
+                        <div class="img"><img src="/images/sub/wehago_03_img01.png" alt=""></div>
+                        <div class="txt">
+                            <strong>회사의 중요한 정보자산을 보호</strong>
+                            <p>
+                                관리자는 사용자의 플랫폼 접속과 활동 이력등을 기록할 수 있어 <br />
+                                회사의 중요한 정보 자산을 보호 할 수 있습니다.
+                            </p>
+                            <p>
+                                사용자는 QR코드 2차 인증으로 내 정보와 자산을 안전하게 <br />
+                                보호합니다.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <div class="img"><img src="/images/sub/wehago_03_img02.png" alt=""></div>
+                        <div class="txt">
+                            <strong>스마트한 Online 경영관리</strong>
+                            <p>
+                                전문적인 경영관리 서비스를 안전한 클라우드에서 사용할 수 <br />
+                                있습니다.
+                            </p>
+                            <p>
+                                자동회계처라가 가능한 회계관리부터 인사관리, 물류관리, <br />
+                                신고관리까지 Smart A10에서는 어디서든 중단 없는 <br />
+                                경영관리가 가능합니다.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <div class="img"><img src="/images/sub/wehago_03_img03.png" alt=""></div>
+                        <div class="txt">
+                            <strong>유연한 근무환경 제공</strong>
+                            <p>
+                                웹, 모바일, 태블릿 등 다양한 기기의 자유로운 <br />
+                                연결을 통해 시간과 장소에 구애 받지 않는 소통과 <br />
+                                업무를 경험 할 수 있습니다.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <div class="img"><img src="/images/sub/wehago_03_img04.png" alt=""></div>
+                        <div class="txt">
+                            <div class="icon">
+                                <div><img src="/images/sub/wehago_03_icon01.png" alt=""></div>
+                                <div><img src="/images/sub/wehago_03_icon02.png" alt=""></div>
+                                <div><img src="/images/sub/wehago_03_icon03.png" alt=""></div>
+                            </div>
+                            <strong>자동 회계 처리 기능</strong>
+                            <p>기업 거래정보 수집, 분개, 회계 전표 등 전 과정 자동처리</p>
+                            <p>세금계산서, 계산서, 신용카드, 현금영수증, 통장거래내역 자료자동수집</p>
+                            <p>과거 회계처리 패턴 및 빅데이터 분석을 통한 자동분개 및 자동회계처리</p>
+                            <a href="#">리플릿 자세히 보기 <img src="/images/sub/wehago_slide__arr.png" alt=""></a>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <div class="img"><img src="/images/sub/wehago_03_img05.png" alt=""></div>
+                        <div class="txt">
+                            <div class="icon">
+                                <div><img src="/images/sub/wehago_03_icon04.png" alt=""></div>
+                                <div><img src="/images/sub/wehago_03_icon05.png" alt=""></div>
+                                <div><img src="/images/sub/wehago_03_icon06.png" alt=""></div>
+                            </div>
+                            <strong>
+                                초보자에겐 쉽고, <br />
+                                전문가에겐 편리한 입력 기능
+                            </strong>
+                            <p>거래처, 계정과목 등 관리항목 입력시 자동완성을 통한 추천</p>
+                            <p>자동 완성을 통한 추천 거래처별 과거거래 자동 분개 추천</p>
+                            <p>도움말, 관리항목 정보 등 사용자에게 유용한 가이드 TIP 영역 구성</p>
+                            <a href="#">리플릿 자세히 보기 <img src="/images/sub/wehago_slide__arr.png" alt=""></a>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <div class="img"><img src="/images/sub/wehago_03_img06.png" alt=""></div>
+                        <div class="txt">
+                            <div class="icon">
+                                <div><img src="/images/sub/wehago_03_icon07.png" alt=""></div>
+                                <div><img src="/images/sub/wehago_03_icon08.png" alt=""></div>
+                                <div><img src="/images/sub/wehago_03_icon09.png" alt=""></div>
+                            </div>
+                            <strong>원스톱 물류흐름분석</strong>
+                            <p>재고 이동 상황을 단계별로 추적하여 물류흐름 실시간 파악</p>
+                            <p>물류 마감 정보를 기반으로 전자세금계산서 발행 및 회계전표처리</p>
+                            <p>BI현황관리 메뉴에서 발주 및 주문진행현황 등 보고서 만들기</p>
+                            <a href="#">리플릿 자세히 보기 <img src="/images/sub/wehago_slide__arr.png" alt=""></a>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <div class="img"><img src="/images/sub/wehago_03_img07.png" alt=""></div>
+                        <div class="txt">
+                            <div class="icon">
+                                <div><img src="/images/sub/wehago_03_icon10.png" alt=""></div>
+                                <div><img src="/images/sub/wehago_03_icon11.png" alt=""></div>
+                                <div><img src="/images/sub/wehago_03_icon12.png" alt=""></div>
+                            </div>
+                            <strong>
+                                올인원으로 관리 가능한 <br />
+                                인사관리 솔루션
+                            </strong>
+                            <p>간편한 급여정보 입력 및 급여(임금)명세서 발송</p>
+                            <p>전자서명 인증서를 통한 안전한 전자계약</p>
+                            <p>휴가, 연장 등 근태와 연동된 전자결재</p>
+                            <p>손쉽고 빠른 연말정산 및 필요한 증명서 신청</p>
+                            <a href="#">리플릿 자세히 보기 <img src="/images/sub/wehago_slide__arr.png" alt=""></a>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <div class="img"><img src="/images/sub/wehago_03_img08.png" alt=""></div>
+                        <div class="txt">
+                            <div class="icon">
+                                <div><img src="/images/sub/wehago_03_icon13.png" alt=""></div>
+                                <div><img src="/images/sub/wehago_03_icon14.png" alt=""></div>
+                                <div><img src="/images/sub/wehago_03_icon15.png" alt=""></div>
+                            </div>
+                            <strong>
+                                법인 유형별로 <br />
+                                맞춤 법인세 신고관리
+                            </strong>
+                            <p>한눈에 보이는 마감 검증</p>
+                            <p>과거 신고내역 자료 제공</p>
+                            <p>편리한 유보소득 이월관리</p>
+                            <p>자동으로 작성되는 중소기업검토표</p>
+                            <p>세무리스크 자동 검증 서비스</p>
+                            <a href="#">리플릿 자세히 보기 <img src="/images/sub/wehago_slide__arr.png" alt=""></a>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <div class="img"><img src="/images/sub/wehago_03_img09.png" alt=""></div>
+                        <div class="txt">
+                            <div class="icon">
+                                <div><img src="/images/sub/wehago_03_icon16.png" alt=""></div>
+                                <div><img src="/images/sub/wehago_03_icon17.png" alt=""></div>
+                                <div><img src="/images/sub/wehago_03_icon18.png" alt=""></div>
+                            </div>
+                            <strong>
+                                소득자별 맞춤형 <br />
+                                종합소득세 신고관리
+                            </strong>
+                            <p>소득자별 기장의무 추천</p>
+                            <p>개인별 전사업장별 신고현황 파악</p>
+                            <p>편리한 소득금액조정합계표 작성</p>
+                            <p>서식흐름 가이드 제공</p>
+                            <p>전/당기 작성서식 비교화면 제공</p>
+                            <a href="#">리플릿 자세히 보기 <img src="/images/sub/wehago_slide__arr.png" alt=""></a>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <div class="img"><img src="/images/sub/wehago_03_img10.png" alt=""></div>
+                        <div class="txt">
+                            <div class="icon">
+                                <div><img src="/images/sub/wehago_03_icon19.png" alt=""></div>
+                                <div><img src="/images/sub/wehago_03_icon20.png" alt=""></div>
+                                <div><img src="/images/sub/wehago_03_icon21.png" alt=""></div>
+                            </div>
+                            <strong>전자세금계산서 발행</strong>
+                            <p>거래명세서, 입금표 등 부속문서도 전자문서로 발행</p>
+                            <p>상태별로 한눈에 보는 세금계산서 상태 조회</p>
+                            <p>WEHAGO 서비스와 연계를 통한 자동완성입력 기능</p>
+                            <p>월평균 발행량이 많은 기업을 위한 대량발행 기능</p>
+                            <a href="#">리플릿 자세히 보기 <img src="/images/sub/wehago_slide__arr.png" alt=""></a>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <div class="img"><img src="/images/sub/wehago_03_img11.png" alt=""></div>
+                        <div class="txt">
+                            <strong>다른 서비스들과 연결로 편리하게</strong>
+                            <b>
+                                WEHAGO의 서비스들과 연결되어 더욱 편리한 경영관리로 <br />
+                                다양한 업무를 빠르고 효율적으로 처리할 수 있습니다.
+                            </b>
+                            <p>전자세금계산서 발급 및 조회</p>
+                            <p>팩스 전송 및 조회</p>
+                            <p>경비청구서비스 전표처리</p>
+                            <p>경비청구서비스 전표처리</p>
+                            <p>메일 전송, 메시지 전송, 메신저 대화</p>
+                            <p>거래처, 사원 정보 포털과 연동</p>
+                            <a href="#">리플릿 자세히 보기 <img src="/images/sub/wehago_slide__arr.png" alt=""></a>
+                        </div>
+                        
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="wehago_04">
+            <div class="cont_txt">
+                <b>WEHAGO features</b>
+                <h5>
+                    WEHAGO 특장점
+                </h5>
+            </div>
+            <div class="wehago_slide">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="img"><img src="/images/sub/smart_A10__img01.png" alt=""></div>
+                            <div class="txt">
+                                <strong>올인원 플랫폼</strong>
+                                <b>우리 회사의 모든 업무가 하나로 연결</b>
+                                <p>
+                                    경영관리를 위한 전문적인 프로그램 (Smart A10)부터
+                                    업무효율화와 협업에 필요한 메신저,화상회의, 문서관리,
+                                    전자결재, GPS기반 근태관리 등 우리 회사 업무에 필요한
+                                    다양한 솔루션을 하나의플랫폼에서 사용할 수 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img"><img src="/images/sub/smart_A10__img01.png" alt=""></div>
+                            <div class="txt">
+                                <strong>올인원 플랫폼</strong>
+                                <b>우리 회사의 모든 업무가 하나로 연결</b>
+                                <p>
+                                    경영관리를 위한 전문적인 프로그램 (Smart A10)부터
+                                    업무효율화와 협업에 필요한 메신저,화상회의, 문서관리,
+                                    전자결재, GPS기반 근태관리 등 우리 회사 업무에 필요한
+                                    다양한 솔루션을 하나의플랫폼에서 사용할 수 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img"><img src="/images/sub/smart_A10__img01.png" alt=""></div>
+                            <div class="txt">
+                                <strong>올인원 플랫폼</strong>
+                                <b>우리 회사의 모든 업무가 하나로 연결</b>
+                                <p>
+                                    경영관리를 위한 전문적인 프로그램 (Smart A10)부터
+                                    업무효율화와 협업에 필요한 메신저,화상회의, 문서관리,
+                                    전자결재, GPS기반 근태관리 등 우리 회사 업무에 필요한
+                                    다양한 솔루션을 하나의플랫폼에서 사용할 수 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="wehago_05">
+            <div class="cont_txt">
+                <b>WEHAGO VIDEO</b>
+                <h5>
+                    <span>쉽게, 편리하게, 다 함께 </span>WEHAGO
+                </h5>
+            </div>
+            <ul class="video__wrap">
+                <li>
+                    <a href="https://www.youtube.com/watch?v=Z3B0H0HFvTE" data-fancybox >
+                        <img src="/images/sub/wehago_video_01.jpg" alt="">
+                    </a>
+                    <b>【ONE AI】 세무회계사무소를 위한 혁신적인 AI 서비스, ONE AI 소개해드릴게요📢</b>
+                    <!-- <p>2024.04.02</p> -->
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=6i1zJj8yoTI" data-fancybox >
+                        <img src="/images/sub/wehago_video_02.jpg" alt="">
+                    </a>
+                    <b>【WEHAGO T】 수임처정보 & 타임머신</b>
+                    <!-- <p>2024.04.02</p> -->
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=QQGuQfRKrmg" data-fancybox >
+                        <img src="/images/sub/wehago_video_03.jpg" alt="">
+                    </a>
+                    <b>【WEHAGO】 이용가이드</b>
+                    <!-- <p>2024.04.02</p> -->
+                </li>
+            </ul>
+        </div>
+    </div>
+	<!--#include virtual=common/include/footer.asp-->
+</div>
+<script type="text/javascript">
+	$(function () {
+	});
+
+
+
+                var wehago_04 = new Swiper('.wehago_01 .wehago_slide .swiper', {
+                direction: 'horizontal',
+                // loop: true,
+                speed: 1200,
+                spaceBetween: 20,
+                slidesPerView: 1,
+                centeredSlides: true,
+                allowTouchMove: true,
+                observer: true,
+                observeParents: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.wehago_01 .wehago_slide .swiper-pagination',
+                    type: 'bullets',
+                },
+
+
+
+
+            });
+
+            
+            var wehago_04 = new Swiper('.wehago_04 .wehago_slide .swiper', {
+                direction: 'horizontal',
+                // loop: true,
+                speed: 1200,
+                spaceBetween: 20,
+                slidesPerView: 1,
+                centeredSlides: true,
+                allowTouchMove: true,
+                observer: true,
+                observeParents: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.wehago_04 .wehago_slide .swiper-pagination',
+                    type: 'bullets',
+                },
+
+
+
+            });
+</script>
+</body>
+</html>

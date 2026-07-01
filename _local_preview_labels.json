@@ -1,0 +1,38 @@
+{
+  "exact": {
+    "oneai__img01":     { "title": "ONE AI",                    "sub": "ERP · 그룹웨어 · EDM 내재화 AI 브랜드",    "w": 900, "h": 560 },
+    "oneai__img02":     { "title": "고객 도입 사례",              "sub": "AX (인공지능 전환) 경험 확산",             "w": 900, "h": 560 },
+    "oneai_01__icon01": { "title": "정확성",                     "sub": "",                                       "w": 120, "h": 120, "icon": "★" },
+    "oneai_01__icon02": { "title": "사용성",                     "sub": "",                                       "w": 120, "h": 120, "icon": "◎" },
+    "oneai_01__icon03": { "title": "보안성",                     "sub": "",                                       "w": 120, "h": 120, "icon": "■" },
+    "oneaiSec2__img01": { "title": "전자결재 AI",                "sub": "결재문서 초안·오류 검증",                  "w": 520, "h": 360 },
+    "oneaiSec2__img02": { "title": "메일 AI",                   "sub": "본문·첨부 요약 · 답장 생성",                "w": 520, "h": 360 },
+    "oneaiSec2__img03": { "title": "일정 · 메신저 AI",            "sub": "주요 일정 정리 · 실시간 통역",              "w": 520, "h": 360 },
+    "oneaiSec2__img04": { "title": "문서작성 AI 템플릿",          "sub": "키워드 입력만으로 자동 작성",                "w": 520, "h": 360 },
+    "oneaiSec2__img05": { "title": "AI 법무서식",                "sub": "소장·계약서 자동 작성",                    "w": 520, "h": 360 },
+    "oneaiSec2__img06": { "title": "회계 데이터 분석",            "sub": "재무 비율 자동 계산 · 증빙 추적",            "w": 520, "h": 360 },
+    "oneaiSec2__img07": { "title": "인사 데이터 분석",            "sub": "조건별 추출 · 차트 시각화",                "w": 520, "h": 360 },
+    "oneaiSec2__img08": { "title": "물류 · 생산 분석",            "sub": "재고·매출·실적 종합 분석",                  "w": 520, "h": 360 },
+    "oneai_03_img01":   { "title": "세법도우미",                  "sub": "실무자의 세법 질문에 실시간 답변",          "w": 720, "h": 480 },
+    "oneai_03_img02":   { "title": "ONE News",                  "sub": "AI 기사 편집기 · 송고 전 탈고",            "w": 720, "h": 480 },
+    "oneai_03_img03":   { "title": "ONE Studio",                "sub": "AI 영상 제작 · 대본·자막·아바타",           "w": 720, "h": 480 },
+    "oneai_03_img04":   { "title": "AI 보이스",                  "sub": "녹음·음성 텍스트 변환 및 요약",             "w": 720, "h": 480 },
+    "oneai_03_img05":   { "title": "AI 렌즈",                    "sub": "이미지·카메라로 질문하는 AI",               "w": 720, "h": 480 },
+    "oneai_03_img06":   { "title": "모바일 일정·메신저",           "sub": "이동 중에도 가능한 AI 비서",                "w": 720, "h": 480 },
+    "oneai_03_img07":   { "title": "프롬프트 모음집",              "sub": "업무별 검증된 추천 프롬프트",               "w": 720, "h": 480 },
+    "oneai_03_img08":   { "title": "ONE AI 제안서",              "sub": "Amaranth 10 융합 ONE AI 소개",            "w": 720, "h": 480 },
+    "oneai_03_img09":   { "title": "Amaranth 10 브로슈어",        "sub": "차세대 디지털 비즈니스 플랫폼",             "w": 720, "h": 480 },
+    "oneai_03_img10":   { "title": "ONE News & Studio 브로슈어",  "sub": "원 소스 AI 멀티 포맷 서비스",               "w": 720, "h": 480 },
+    "oneai_03_img11":   { "title": "더존 ATEC 체험",              "sub": "AI Transformation Experience Center",   "w": 720, "h": 480 }
+  },
+  "extra": {},
+  "iconLabels03": [
+    "REC","SUM","DOC",
+    "CAM","IMG","SCAN",
+    "CAL","CHAT","GO",
+    "TIP","PDF","DL",
+    "DOC","INFO","DL",
+    "BRO","INFO","DL",
+    "NEWS","VID","DL"
+  ]
+}

@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* basic.css는 태그의 기본속성을 초기화하고 사이트의 전체적인 기본 스타일을 정의합니다. */
+html {overflow-y:scroll;}
+html, body {height:100%;}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,form,fieldset,legend,input,textarea,button,select,figure,figcaption{margin:0;padding:0}
+body,table,input,textarea,select{font-family:'나눔고딕',NanumGothic,'맑은고딕',Malgun Gothic,'돋움',Dotum,helvetica,sans-serif;font-size:12px;line-height:18px;color:#555;}
+img{border:0}
+ul,ol{list-style:none}
+hr {clear:both;display:none;}
+li img, dd img {vertical-align:top;}
+*html body img {margin:none; padding:none;} /*for IE 6*/
+fieldset {border:1px solid #ccc; padding:10px;}
+legend {font-weight:bold;}
+legend:before {content:"[ "}
+legend:after {content:" ]"}
+table caption {visibility:hidden; overflow:hidden; width:0; height:0; margin:0; padding:0; font:0/0 Arial;}
+input[type="radio"], input[type="checkbox"] {vertical-align:middle !important; margin:-2px 3px 0 0 !important;}
+a{color:#555;text-decoration:none}
+a:hover,a:active{text-decoration:underline}
+select {border:1px solid #b7b7b7;}
+
+/* user class */
+.clfix{*zoom:1;} /*for ie 5.5-7*/
+.clfix:after {content:" "; display:block; clear:both;}
+
+.clear{clear:both;}
+.hide {position:absolute; width:1px; height:1px; left:0; top:0; font-size:0; line-height:0; text-indent:-9999%;}
+
+.pointer {cursor:pointer;} 
+html { filter: expression(document.execCommand("BackgroundImageCache", false, true));} 
+
+.input {background:#fff; height:18px; border:1px solid #ccc;}
+.textarea {background:#fff; border:1px solid #ccc;}
+
+.fl {float:left;}
+.fr {float:right;}
+
+.space-center {text-align:center !important;}
+.space-right {text-align:right !important;}
+.space-left {text-align:left !important;}
+
+.mgb5 {margin-bottom:5px;}
+.mgb10 {margin-bottom:10px;}
+.mgb20 {margin-bottom:20px;}
+.mgb30{margin-bottom:30px;}
+
+/* png24 */
+.png24 {tmp:expression(setPng24(this));} /* FOR IMG ONLY */
+
+
+/* 로그인 */
+#wrapper {*zoom:1; position:relative; height:auto !important; height:100%; min-height:100%; background:url('../images/login/login_bg.gif') 0 repeat-x;} /* IE5.5~7 브라우저 대응 Hack */
+#wrapper:after {content:" "; display:block; clear:both;} /* 표준계열 브라우저에 대응하는 float 해제용 가상 엘리먼트의 생성 */
+
+#loginArea {position:absolute; width:661px; height:280px; left:50%; top:50%; margin:-170px 0 0 -330px;}
+.memberLogin {position:relative; width:661px; height:248px;background:url('../images/login/login_box.png') 0 0 no-repeat;  _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/login_box.png",sizingMethod='crop'); margin:0 auto 10px auto;}
+.memberLogin .loginField {position:absolute;top:88px;left:274px;border:0 none;padding:0;margin:0;}
+.memberLogin .loginField legend {visibility:hidden;width:0;height:0;font-size:0;}
+.memberLogin .loginField .id {position:absolute;top:2px;left:0;width:260px;}
+.memberLogin .loginField .pw {position:absolute;top:30px;left:0;width:260px;} 
+.memberLogin .loginField label {display:block;float:left;width:57px;padding:5px 0 0 0;}
+.memberLogin .loginField .btnLogin {position:absolute;top:0;left:262px;}
+.memberLogin .loginText {position:absolute;top:176px;left:278px; font:11px Dotum; color:#89b7d3; line-height:19px;}
+#loginArea .copyright {text-align:center; font:11px Arial; color:#999999; line-height:19px;}
+input.loginInput {width:194px; height:19px; background:#f2f2f1; border:1px solid #116294; color:#666; margin:0;}
+
+/* header */
+#admin-wrapper {position:relative; width:100%; min-width:1250px; height:auto !important; height:100%; min-height:100%; margin:0; background:url('../images/left_bg2.gif') 0 0 repeat-y;}
+#admin-header {width:100%; min-width:1250px; height:105px; background:url('../images/header_bg.gif') 0 0 repeat-x; box-shadow:0 3px 3px rgba(0, 0, 0, .3);-webkit-box-shadow:0 3px 3px rgba(0, 0, 0, .3);-moz-box-shadow:0 3px 0 rgba(0, 0, 0, .3);}
+#admin-header ul, #admin-header li {list-style:none;}
+.admin-top-content {width:100%; height:32px; overflow:hidden;}
+.admin-middle-content {width:100%; height:70px; overflow:hidden;}
+.top-logo {float:left;}
+.top-util {float:right; width:450px; margin:0 20px 0 0;}
+.visitor-name {float:left; height:20px; line-height:30px; color:#fff;}
+.util-menu {float:right;}
+.util-menu li {float:left; display:inline; line-height:0; margin:0 0 0 15px;}
+.admin-gnb {float:left; display:inline; padding:0 1px 0 0; background:url('../images/gnb_vline_last.gif') 100% 0 no-repeat;}
+.admin-gnb li {float:left; display:inline; font-size:0; line-height:0;}

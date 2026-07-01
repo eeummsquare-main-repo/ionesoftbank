@@ -1,0 +1,31 @@
+# === 업로드/사용자 데이터 (1.2GB, 서버에서만 관리) ===
+/upload/
+
+# === 통계/로그 (Gabia webalizer 등) ===
+/_gabia/
+/_local_preview_server.err.log
+/_local_preview_server.out.log
+
+# === OneAI/v2 분석 산출물 (임시 덤프) ===
+/_oneai_*
+/_v2_*
+/_preview_popup.html
+
+# === 로컬 프리뷰 도구 ===
+/_serve_asp.py
+/_tools/
+/_proc/
+
+# === 에디터/OS ===
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+# === IDE ===
+.vscode/
+.idea/

@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>카드뉴스 신청관리 — 관리자 페이지 미리보기</title>
+<link rel="stylesheet" href="/backoffice/css/default.css?ver=1" type="text/css" />
+<link rel="stylesheet" href="/backoffice/css/jquery-ui.css?ver=1" type="text/css" />
+<script src="/_lib/js/jquery-1.11.1.min.js"></script>
+<style>
+    /* 미리보기 안내 배너 */
+    .preview-banner{position:sticky; top:0; z-index:1000; background:#fff8d6; border-bottom:2px solid #f0c040; padding:8px 16px; font-size:13px; color:#5a4500; text-align:center;}
+    .preview-banner b{color:#c43;}
+
+    /* preview에서는 LNB 서브메뉴를 강제 표시 (실제는 JS가 dataTCode 매칭으로 처리) */
+    .lnb .side_navi li[data-show="1"]{display:block;}
+
+    /* 상세 팝업 */
+    .preview-modal{display:none; position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,0.55);}
+    .preview-modal.show{display:flex; align-items:flex-start; justify-content:center; padding:50px 20px; overflow-y:auto;}
+    .preview-modal .popWrap{background:#fff; max-width:880px; width:100%; box-shadow:0 10px 40px rgba(0,0,0,0.4); border-radius:4px; overflow:hidden;}
+    .preview-modal .popCon{padding:0;}
+    .preview-modal h1{margin:0; padding:14px 20px; background:#00b0bf; color:#fff; font-size:16px; display:flex; justify-content:space-between; align-items:center;}
+    .preview-modal h1 .btnClose{color:#fff; text-decoration:none; cursor:pointer;}
+    .preview-modal #contents{padding:20px;}
+
+    /* 푸터 */
+    .preview-footer{text-align:center; padding:18px 0; color:#888; font-size:12px; background:#fff; border-top:1px solid #eee; margin-top:30px;}
+</style>
+</head>
+
+<body>
+
+<div class="preview-banner">
+    <b>[미리보기]</b> 카드뉴스 신청관리 — 관리자 화면. 데이터는 샘플 5건. [보기]/[삭제]/[상태변경]은 alert로만 동작합니다.
+</div>
+
+<div id="wrap">
+
+    <!-- ===== 헤더 (실제 backoffice/common/header.asp 구조와 동일) ===== -->
+    <div class="top_wrap">
+        <div class="top_navi">
+            <h1 class="logo"><span>아이원 관리자 센터</span></h1>
+            <p class="topinfo">
+                <span class="nametag">아이원소프트뱅크</span> 님 환영합니다.
+                <span class="top_btn">
+                    <a href="javascript:alert('[미리보기]')" class="btn_logout">로그아웃</a>
+                    <a href="javascript:alert('[미리보기]')" class="btn_modify">내정보변경</a>
+                    <a href="/" target="_blank" class="btn_home">서비스 메인</a>
+                </span>
+            </p>
+        </div>
+    </div>
+
+    <!-- ===== GNB (실제 메뉴명 그대로) ===== -->
+    <div class="gnb">
+        <ul class="navi">
+            <li><a href="/backoffice/">Home</a></li>
+            <li><a href="#">기본관리</a></li>
+            <li><a href="#">회원관리</a></li>
+            <li><a href="#">정부지원사업</a></li>
+            <li><a href="#">구입문의</a></li>
+            <li class="current"><a href="#">고객센터</a></li>
+            <li><a href="#">Amaranth10 고객센터</a></li>
+            <li><a href="#">iCUBE / iCUBE G20 고객센터</a></li>
+            <li><a href="#">Bizbox Alpha 고객센터</a></li>
+            <li><a href="#">커뮤니티</a></li>
+            <li><a href="#">접속통계</a></li>
+        </ul>
+    </div>
+
+    <!-- ===== LNB (고객센터의 하위 메뉴) ===== -->
+    <div class="lnb">
+        <ul class="side_navi">
+            <li data-show="1"><a href="#">상담문의</a></li>
+            <li data-show="1" class="current"><a href="#">카드뉴스 신청관리</a></li>
+        </ul>
+    </div>
+
+    <div id="container">
+        <div class="contents" style="width:1280px; margin:0 auto; padding:20px 0 40px;">
+
+            <div class="location">
+                <h2 class="top_left" style="float:left; font-size:22px; color:#222; margin:0;">카드뉴스 신청관리</h2>
+                <div style="float:right; padding-top:8px;">
+                    <a href="/backoffice/">HOME</a> &gt; 고객센터 &gt; <span>카드뉴스 신청관리</span>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+
+            <!-- 검색 영역 -->
+            <form name="searchFrm" method="get" onsubmit="return false;" style="margin-top:20px;">
+                <table class="tbl_row">
+                    <colgroup>
+                        <col style="width:12%" />
+                        <col style="width:38%" />
+                        <col style="width:12%" />
+                        <col style="width:*" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>신청일</th>
+                            <td>
+                                <input type="text" class="datepicker1" value="2026-05-01" style="width:130px;" readonly />
+                                ~
+                                <input type="text" class="datepicker2" value="2026-05-15" style="width:130px;" readonly />
+                            </td>
+                            <th>상태</th>
+                            <td>
+                                <select>
+                                    <option value="">상태 전체</option>
+                                    <option value="0">대기중</option>
+                                    <option value="1">접수완료</option>
+                                    <option value="9">보관</option>
+                                    <option value="99">취소</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="searchbox" style="text-align:center; padding:15px 0;">
+                    <select>
+                        <option>회사명</option>
+                        <option>담당자</option>
+                        <option selected>이메일</option>
+                        <option>연락처</option>
+                    </select>
+                    <input type="text" />
+                    <a href="javascript:alert('[미리보기] 검색 실행')" class="btn_default btn_default100">검색</a>
+                    <a href="javascript:location.reload()" class="btn_default btn_default100">초기화</a>
+                </div>
+            </form>
+
+            <!-- 결과 카운트 / 페이지사이즈 -->
+            <div class="tbl_top">
+                <p class="top_left inquiry">전체 <span>5</span>건의 신청내역이 검색되었습니다</p>
+                <div class="top_right">
+                    <select>
+                        <option>10줄씩 보기</option>
+                        <option selected>20줄씩 보기</option>
+                        <option>30줄씩 보기</option>
+                        <option>50줄씩 보기</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- 목록 테이블 -->
+            <table class="tbl_col">
+                <caption>카드뉴스 신청내역</caption>
+                <colgroup>
+                    <col style="width:3%" />
+                    <col style="width:4%" />
+                    <col style="" />
+                    <col style="width:8%" />
+                    <col style="width:10%" />
+                    <col style="" />
+                    <col style="width:14%" />
+                    <col style="width:11%" />
+                    <col style="width:9%" />
+                    <col style="width:10%" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" id="ch_cIdall" /></th>
+                        <th>NO</th>
+                        <th>회사명</th>
+                        <th>담당자</th>
+                        <th>연락처</th>
+                        <th>이메일</th>
+                        <th>관심주제</th>
+                        <th>신청일시</th>
+                        <th>상태</th>
+                        <th>관리</th>
+                    </tr>
+                </thead>
+                <tbody id="sampleRows"></tbody>
+            </table>
+
+            <div class="tbl_bottom">
+                <div class="top_left">
+                    선택하신 신청내역을
+                    <select id="groupstatus">
+                        <option value="0">대기중</option>
+                        <option value="1">접수완료</option>
+                        <option value="9">보관</option>
+                        <option value="99">취소</option>
+                    </select>
+                    으로
+                    <a href="javascript:groupStatusChange()" class="btn_gray btn_gray50">변경</a>
+                </div>
+                <div class="top_right">
+                    <a href="javascript:groupRemove()" class="btn_red btn_gray100">선택삭제</a>
+                    <a href="javascript:alert('[미리보기] 엑셀 다운로드')" class="btn_green btn_gray100" style="width:120px;">검색내역 엑셀다운</a>
+                </div>
+            </div>
+
+            <!-- 페이지네이션 mock -->
+            <div style="text-align:center; padding:25px 0 10px;">
+                <a href="#" style="display:inline-block; padding:6px 12px; border:1px solid #00848f; background:#00b0bf; color:#fff; text-decoration:none;">1</a>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="preview-footer">COPYRIGHT (C) 2023 .ALL RIGHTS RESERVED.</div>
+
+
+<!-- ===== 상세 보기 팝업 mock ===== -->
+<div class="preview-modal" id="detailModal">
+    <div class="popWrap">
+        <div class="popCon">
+            <h1>
+                <span>카드뉴스 신청 상세</span>
+                <a href="javascript:closeDetail()" class="btnClose">✕</a>
+            </h1>
+
+            <div id="contents">
+
+                <table class="tbl_row" style="width:100%;">
+                    <colgroup>
+                        <col style="width:18%" />
+                        <col style="width:32%" />
+                        <col style="width:18%" />
+                        <col style="width:32%" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>신청일시</th>
+                            <td id="d_regdate">2026-05-15 14:30:22</td>
+                            <th>상태</th>
+                            <td id="d_status"><b>대기중</b></td>
+                        </tr>
+                        <tr>
+                            <th>회사명</th>
+                            <td id="d_company" colspan="3">홍길동컴퍼니</td>
+                        </tr>
+                        <tr>
+                            <th>담당자명</th>
+                            <td id="d_writer">홍길동</td>
+                            <th>연락처</th>
+                            <td id="d_phone">010-1234-5678</td>
+                        </tr>
+                        <tr>
+                            <th>이메일</th>
+                            <td id="d_email">hong@example.com</td>
+                            <th>접속 IP</th>
+                            <td id="d_ip">112.34.56.78</td>
+                        </tr>
+                        <tr>
+                            <th>관심주제</th>
+                            <td id="d_interest" colspan="3">ERP, PMS</td>
+                        </tr>
+                        <tr>
+                            <th>문의사항</th>
+                            <td id="d_note" colspan="3" style="white-space:pre-wrap; line-height:1.5;">최신 카드뉴스를 정기적으로 받아보고 싶습니다.
+관련 솔루션 소개 자료도 함께 부탁드립니다.</td>
+                        </tr>
+                        <tr>
+                            <th>동의항목</th>
+                            <td colspan="3">
+                                ✓ 개인정보 수집 및 이용 &nbsp;|&nbsp;
+                                ✓ 정보 수신
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="tbl_row" style="width:100%; margin-top:15px;">
+                    <colgroup>
+                        <col style="width:18%" />
+                        <col style="width:*" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>관리자 메모</th>
+                            <td><textarea rows="5" style="width:99%; box-sizing:border-box;" placeholder="처리 내역, 응대 메모 등을 입력하세요."></textarea></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="btn_center pt30" style="text-align:center; padding:20px 0 0;">
+                    <a href="javascript:alert('[미리보기] 메모 저장')" class="btn_largeG">메모 저장</a>
+                    <a href="javascript:closeDetail()" class="btn_largeW">닫기</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+var samples = [
+    { idx:5, company:'홍길동컴퍼니',     writer:'홍길동', phone:'010-1234-5678', email:'hong@example.com',     interest:'ERP, PMS',           regdate:'2026-05-15 14:30:22', status:0,  note:'최신 카드뉴스를 정기적으로 받아보고 싶습니다.\n관련 솔루션 소개 자료도 함께 부탁드립니다.', ip:'112.34.56.78' },
+    { idx:4, company:'(주)아이원소프트', writer:'김담당', phone:'02-555-1234',   email:'kim@i1soft.co.kr',     interest:'ISMS-P',             regdate:'2026-05-14 09:12:05', status:1,  note:'ISMS-P 인증 관련 최근 동향 카드뉴스를 받고 싶습니다.', ip:'211.45.12.33' },
+    { idx:3, company:'에이비씨주식회사', writer:'이매니저', phone:'031-222-7777', email:'lee.m@abc.co.kr',     interest:'PMS, 보안',          regdate:'2026-05-13 17:45:10', status:0,  note:'', ip:'58.140.22.77' },
+    { idx:2, company:'더존비즈테크',     writer:'박사원', phone:'010-9999-1111', email:'park@douzon-biz.com', interest:'Amaranth10, 그룹웨어', regdate:'2026-05-12 11:03:48', status:9,  note:'동일 그룹사 솔루션 도입 검토 자료 요청', ip:'175.223.10.45' },
+    { idx:1, company:'테스트',           writer:'test',   phone:'010-0000-0000', email:'',                     interest:'',                   regdate:'2026-05-10 08:00:00', status:99, note:'테스트 신청', ip:'127.0.0.1' }
+];
+
+function statusLabel(s){
+    return ({0:'대기중',1:'접수완료',9:'보관',99:'취소'})[s] || '-';
+}
+
+function renderRows(){
+    var $tb = $('#sampleRows').empty();
+    samples.forEach(function(s, i){
+        var num = samples.length - i;
+        var sel = '<select onchange="changeStatus('+s.idx+', this.value)">' +
+            [0,1,9,99].map(function(v){
+                return '<option value="'+v+'" '+(v===s.status?'selected':'')+'>'+statusLabel(v)+'</option>';
+            }).join('') +
+            '</select>';
+        $tb.append(
+            '<tr align="center">' +
+                '<td><input type="checkbox" name="chkidx" value="'+s.idx+'"></td>' +
+                '<td>'+num+'</td>' +
+                '<td style="text-align:left;"><a href="javascript:openDetail('+s.idx+')">'+s.company+'</a></td>' +
+                '<td>'+s.writer+'</td>' +
+                '<td>'+s.phone+'</td>' +
+                '<td>'+(s.email||'-')+'</td>' +
+                '<td>'+(s.interest||'-')+'</td>' +
+                '<td>'+s.regdate+'</td>' +
+                '<td>'+sel+'</td>' +
+                '<td>' +
+                    '<a href="javascript:openDetail('+s.idx+')" class="btn_gray">보기</a> ' +
+                    '<a href="javascript:delOne('+s.idx+')" class="btn_red">삭제</a>' +
+                '</td>' +
+            '</tr>'
+        );
+    });
+}
+
+function openDetail(idx){
+    var s = samples.find(function(x){ return x.idx===idx; });
+    if (!s) return;
+    $('#d_regdate').text(s.regdate);
+    $('#d_status').html('<b>'+statusLabel(s.status)+'</b>');
+    $('#d_company').text(s.company);
+    $('#d_writer').text(s.writer);
+    $('#d_phone').text(s.phone);
+    $('#d_email').text(s.email || '-');
+    $('#d_ip').text(s.ip);
+    $('#d_interest').text(s.interest || '-');
+    $('#d_note').text(s.note || '(문의사항 없음)');
+    $('#detailModal').addClass('show');
+}
+function closeDetail(){ $('#detailModal').removeClass('show'); }
+
+function changeStatus(idx, status){
+    if (confirm('선택하신 신청내역의 상태를 변경하시겠습니까?')){
+        alert('[미리보기] idx='+idx+' → status='+statusLabel(parseInt(status)));
+    }
+}
+function delOne(idx){
+    if (confirm('선택하신 신청내역을 삭제하시겠습니까?')){
+        alert('[미리보기] idx='+idx+' 삭제');
+    }
+}
+function groupRemove(){
+    var checked = $('input[name="chkidx"]:checked').length;
+    if (checked === 0) { alert('삭제하실 신청내역을 선택하세요.'); return; }
+    if (confirm('선택하신 모든 신청내역('+checked+'건)을 삭제하시겠습니까?')){
+        alert('[미리보기] '+checked+'건 일괄 삭제');
+    }
+}
+function groupStatusChange(){
+    var checked = $('input[name="chkidx"]:checked').length;
+    if (checked === 0) { alert('상태 변경하실 신청내역을 선택하세요.'); return; }
+    if (confirm('선택하신 모든 신청내역('+checked+'건)의 상태를 변경하시겠습니까?')){
+        alert('[미리보기] '+checked+'건 → '+statusLabel(parseInt($('#groupstatus').val())));
+    }
+}
+
+$(function(){
+    renderRows();
+    $('#ch_cIdall').on('change', function(){
+        $('input[name="chkidx"]').prop('checked', this.checked);
+    });
+    $('#detailModal').on('click', function(e){
+        if (e.target.id === 'detailModal') closeDetail();
+    });
+});
+</script>
+
+</body>
+</html>

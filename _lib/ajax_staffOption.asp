@@ -1,0 +1,105 @@
+<%
+IF Note2="서울" Then
+	IF BoardSort="5" Then recvMail = "TS.An@autech-otis.co.kr"
+	IF BoardSort="6" Then recvMail = "CS.Shin@autech-otis.co.kr"
+	IF BoardSort="7" Then recvMail = "CS.Shin@autech-otis.co.kr"
+	IF BoardSort="8" Then recvMail = "DaHyeon.Kim@autech-otis.co.kr"
+	IF BoardSort="9" Then recvMail = "YoungTae.Hong@autech-otis.co.kr"
+ElseIF Note2="부산" Then
+	IF BoardSort="5" Then recvMail = "YongSub.Kim@autech-otis.co.kr"
+	IF BoardSort="6" Then recvMail = "ChaeIn.Lim@autech-otis.co.kr"
+	IF BoardSort="7" Then recvMail = "ChaeIn.Lim@autech-otis.co.kr"
+	IF BoardSort="8" Then recvMail = "DaHyeon.Kim@autech-otis.co.kr"
+	IF BoardSort="9" Then recvMail = "BC.Jeong@autech-otis.co.kr"
+ElseIF Note2="대구" Then
+	IF BoardSort="5" Then recvMail = "YongSub.Kim@autech-otis.co.kr"
+	IF BoardSort="6" Then recvMail = "ChaeIn.Lim@autech-otis.co.kr"
+	IF BoardSort="7" Then recvMail = "ChaeIn.Lim@autech-otis.co.kr"
+	IF BoardSort="8" Then recvMail = "DaHyeon.Kim@autech-otis.co.kr"
+	IF BoardSort="9" Then recvMail = "BC.Jeong@autech-otis.co.kr"
+ElseIF Note2="인천" Then
+	IF BoardSort="5" Then recvMail = "TS.An@autech-otis.co.kr"
+	IF BoardSort="6" Then recvMail = "CS.Shin@autech-otis.co.kr"
+	IF BoardSort="7" Then recvMail = "CS.Shin@autech-otis.co.kr"
+	IF BoardSort="8" Then recvMail = "DaHyeon.Kim@autech-otis.co.kr"
+	IF BoardSort="9" Then recvMail = "YoungTae.Hong@autech-otis.co.kr"
+ElseIF Note2="광주" Then
+	IF BoardSort="5" Then recvMail = "YongSub.Kim@autech-otis.co.kr"
+	IF BoardSort="6" Then recvMail = "ChaeIn.Lim@autech-otis.co.kr"
+	IF BoardSort="7" Then recvMail = "ChaeIn.Lim@autech-otis.co.kr"
+	IF BoardSort="8" Then recvMail = "DaHyeon.Kim@autech-otis.co.kr"
+	IF BoardSort="9" Then recvMail = "BC.Jeong@autech-otis.co.kr"
+ElseIF Note2="대전" Then
+	IF BoardSort="5" Then recvMail = "TS.An@autech-otis.co.kr"
+	IF BoardSort="6" Then recvMail = "CS.Shin@autech-otis.co.kr"
+	IF BoardSort="7" Then recvMail = "CS.Shin@autech-otis.co.kr"
+	IF BoardSort="8" Then recvMail = "DaHyeon.Kim@autech-otis.co.kr"
+	IF BoardSort="9" Then recvMail = "BC.Jeong@autech-otis.co.kr"
+ElseIF Note2="울산" Then
+	IF BoardSort="5" Then recvMail = "YongSub.Kim@autech-otis.co.kr"
+	IF BoardSort="6" Then recvMail = "ChaeIn.Lim@autech-otis.co.kr"
+	IF BoardSort="7" Then recvMail = "ChaeIn.Lim@autech-otis.co.kr"
+	IF BoardSort="8" Then recvMail = "DaHyeon.Kim@autech-otis.co.kr"
+	IF BoardSort="9" Then recvMail = "BC.Jeong@autech-otis.co.kr"
+ElseIF Note2="세종" Then
+	IF BoardSort="5" Then recvMail = "TS.An@autech-otis.co.kr"
+	IF BoardSort="6" Then recvMail = "CS.Shin@autech-otis.co.kr"
+	IF BoardSort="7" Then recvMail = "CS.Shin@autech-otis.co.kr"
+	IF BoardSort="8" Then recvMail = "DaHyeon.Kim@autech-otis.co.kr"
+	IF BoardSort="9" Then recvMail = "YoungTae.Hong@autech-otis.co.kr"
+ElseIF Note2="경기도" Then
+	IF BoardSort="5" Then recvMail = "TS.An@autech-otis.co.kr"
+	IF BoardSort="6" Then recvMail = "CS.Shin@autech-otis.co.kr"
+	IF BoardSort="7" Then recvMail = "CS.Shin@autech-otis.co.kr"
+	IF BoardSort="8" Then recvMail = "DaHyeon.Kim@autech-otis.co.kr"
+	IF BoardSort="9" Then recvMail = "YoungTae.Hong@autech-otis.co.kr"
+ElseIF Note2="강원도" Then
+	IF BoardSort="5" Then recvMail = "TS.An@autech-otis.co.kr"
+	IF BoardSort="6" Then recvMail = "CS.Shin@autech-otis.co.kr"
+	IF BoardSort="7" Then recvMail = "CS.Shin@autech-otis.co.kr"
+	IF BoardSort="8" Then recvMail = "DaHyeon.Kim@autech-otis.co.kr"
+	IF BoardSort="9" Then recvMail = "YoungTae.Hong@autech-otis.co.kr"
+ElseIF Note2="충청북도" Then
+	IF BoardSort="5" Then recvMail = "TS.An@autech-otis.co.kr"
+	IF BoardSort="6" Then recvMail = "CS.Shin@autech-otis.co.kr"
+	IF BoardSort="7" Then recvMail = "CS.Shin@autech-otis.co.kr"
+	IF BoardSort="8" Then recvMail = "DaHyeon.Kim@autech-otis.co.kr"
+	IF BoardSort="9" Then recvMail = "YoungTae.Hong@autech-otis.co.kr"
+ElseIF Note2="충청남도" Then
+	IF BoardSort="5" Then recvMail = "TS.An@autech-otis.co.kr"
+	IF BoardSort="6" Then recvMail = "CS.Shin@autech-otis.co.kr"
+	IF BoardSort="7" Then recvMail = "CS.Shin@autech-otis.co.kr"
+	IF BoardSort="8" Then recvMail = "DaHyeon.Kim@autech-otis.co.kr"
+	IF BoardSort="9" Then recvMail = "YoungTae.Hong@autech-otis.co.kr"
+ElseIF Note2="전라북도" Then
+	IF BoardSort="5" Then recvMail = "YongSub.Kim@autech-otis.co.kr"
+	IF BoardSort="6" Then recvMail = "ChaeIn.Lim@autech-otis.co.kr"
+	IF BoardSort="7" Then recvMail = "ChaeIn.Lim@autech-otis.co.kr"
+	IF BoardSort="8" Then recvMail = "DaHyeon.Kim@autech-otis.co.kr"
+	IF BoardSort="9" Then recvMail = "BC.Jeong@autech-otis.co.kr"
+ElseIF Note2="전라남도" Then
+	IF BoardSort="5" Then recvMail = "YongSub.Kim@autech-otis.co.kr"
+	IF BoardSort="6" Then recvMail = "ChaeIn.Lim@autech-otis.co.kr"
+	IF BoardSort="7" Then recvMail = "ChaeIn.Lim@autech-otis.co.kr"
+	IF BoardSort="8" Then recvMail = "DaHyeon.Kim@autech-otis.co.kr"
+	IF BoardSort="9" Then recvMail = "BC.Jeong@autech-otis.co.kr"
+ElseIF Note2="경상북도" Then
+	IF BoardSort="5" Then recvMail = "YongSub.Kim@autech-otis.co.kr"
+	IF BoardSort="6" Then recvMail = "ChaeIn.Lim@autech-otis.co.kr"
+	IF BoardSort="7" Then recvMail = "ChaeIn.Lim@autech-otis.co.kr"
+	IF BoardSort="8" Then recvMail = "DaHyeon.Kim@autech-otis.co.kr"
+	IF BoardSort="9" Then recvMail = "BC.Jeong@autech-otis.co.kr"
+ElseIF Note2="경상남도" Then
+	IF BoardSort="5" Then recvMail = "YongSub.Kim@autech-otis.co.kr"
+	IF BoardSort="6" Then recvMail = "ChaeIn.Lim@autech-otis.co.kr"
+	IF BoardSort="7" Then recvMail = "ChaeIn.Lim@autech-otis.co.kr"
+	IF BoardSort="8" Then recvMail = "DaHyeon.Kim@autech-otis.co.kr"
+	IF BoardSort="9" Then recvMail = "BC.Jeong@autech-otis.co.kr"
+ElseIF Note2="제주도" Then
+	IF BoardSort="5" Then recvMail = "YongSub.Kim@autech-otis.co.kr"
+	IF BoardSort="6" Then recvMail = "ChaeIn.Lim@autech-otis.co.kr"
+	IF BoardSort="7" Then recvMail = "ChaeIn.Lim@autech-otis.co.kr"
+	IF BoardSort="8" Then recvMail = "DaHyeon.Kim@autech-otis.co.kr"
+	IF BoardSort="9" Then recvMail = "BC.Jeong@autech-otis.co.kr"
+End IF
+%>

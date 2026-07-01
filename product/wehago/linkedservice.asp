@@ -1,0 +1,408 @@
+<!--#include virtual = _lib/common.asp-->
+<%
+GB_seoTitle = "WEHAGO 전문가 연계서비스 — 회계·세무·노무사 매칭 | 아이원소프트뱅크"
+GB_seoDescription = "WEHAGO 전문가 연계서비스 — 회계사·세무사·노무사·법무사를 클라우드 데이터로 직접 매칭. 데이터 자동 공유로 컨설팅 효율 3배."
+GB_seoKeywords = "WEHAGO,위하고,전문가매칭,회계사,세무사,노무사,법무사,컨설팅"
+%>
+<!DOCTYPE html>
+<html lang="ko" class="sub">
+<head>
+	<!--#include virtual=common/include/head.asp-->
+</head>
+
+<body data-pgCode="0102">
+
+<!--[s] Skip To Content -->
+<a href="#contents" class="skip">&raquo; 본문 바로가기</a>
+<!--[e] Skip To Content -->
+
+<div id="wrap">
+	<!--#include virtual=common/include/header.asp-->
+	<!--#include virtual=common/include/subTop.asp-->
+
+    <div id="" class="inConts1720">
+        <ul class="amaranth10__list">
+            <li><a href="/product/wehago/smart_A10.asp">Smart A10</a></li>
+            <li><a href="/product/wehago/cooperation.asp">협업서비스</a></li>
+            <li><a href="/product/wehago/extraservice.asp">부가서비스</a></li>
+            <li><a href="javascript:void(0);" class="active">전문가 연계서비스</a></li>
+        </ul>
+        <div class="contWrap linkedservice wehago">
+            <div class="wehago_01">
+                <div class="cont_txt">
+                    <h5>
+                        우리회사와 다양한 분야의 전문가들이 연계된 서비스를 WEHAGO에서 만나보세요.
+                    </h5>
+                    <p>
+                        세무회계사무소와 수임고객이 WEHAGO T 와 WEHAGO T edge로 연결됩니다.
+                    </p>
+                </div>
+                <div class="wehago_slide">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="img"><img src="/images/sub/linked__img01.png" alt=""></div>
+                                <div class="txt">
+                                    <ul>
+                                        <li><img src="/images/sub/linked_01__icon01.png" alt=""></li>
+                                        <li><img src="/images/sub/linked_01__icon02.png" alt=""></li>
+                                        <li><img src="/images/sub/linked_01__icon03.png" alt=""></li>
+                                    </ul>
+                                    <strong>경영현황</strong>
+                                    <p>기업의 경영상태를 분석하고 한눈에 파악할 수 있습니다.</p>
+                                    <p>
+                                        기간별 매출/매입과 입금/출금 흐름 내역 확인
+                                    </p>
+                                    <p>기업의 재무비율을 그래프로 한눈에 확인</p>
+                                    <p>매출의 목표달성률을 설정하여 월간/연간 달성률 확인</p>
+                                    <p>유형별 매출/매입 현황 확인</p>
+                                    <a href="#">리플릿 자세히 보기 <img src="/images/sub/wehago_slide__arr.png" alt=""></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="wehago_02">
+                <ul>
+                    <li class="first">
+                        <b>Solution Introduction</b>
+                        <strong>솔루션 소개</strong>
+                        <p>
+                            WEHAGO만의 수임처관리 서비스로 <br>
+                            언제 어디서든 수임고객에게 즉각적인 대응이 가능하도록 설계하였으며 보다 수월해진 소통 경험을 제공합니다.
+                        </p>
+                    </li>
+                    <li class="contBox">
+                        <div class="img"><img src="/images/sub/linkedSec2__img01.jpg" alt=""></div>
+                        <div class="txt">
+                            <b>신고결과 실시간 전송</b>
+                            <div class="flex">
+                                <div>
+                                    <p>수임고객에게 신고완료 알림 전송 <br />신고서, 납부서, 접수증도 <br />언제 어디서든 즉시 확인</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contBox">
+                        <div class="img"><img src="/images/sub/linkedSec2__img02.jpg" alt=""></div>
+                        <div class="txt">
+                            <b>민원, 증명서류 신청/발급</b>
+                            <div class="flex">
+                                <div>
+                                    <p>수임고객이 신청한 서류를 <br />실시간 확인하여 바로 발급하고, <br />발급된 서류는 보관하며 관리</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contBox">
+                        <div class="img"><img src="/images/sub/linkedSec2__img03.jpg" alt=""></div>
+                        <div class="txt">
+                            <b>편리한 증빙전표처리</b>
+                            <div class="flex">
+                                <div>
+                                    <p>수임고객이 증빙영수증을 <br />촬영하여 전송하면 <br />실시간 확인과 편리한 전표처리까지</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contBox">
+                        <div class="img"><img src="/images/sub/linkedSec2__img04.jpg" alt=""></div>
+                        <div class="txt">
+                            <b>통장 화면공유</b>
+                            <div class="flex">
+                                <div>
+                                    <p>내용 파악이 어려웠던 <br />통장내역을 화면 공유로 <br />함께 확인하고 바로처리</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contBox">
+                        <div class="img"><img src="/images/sub/linkedSec2__img05.jpg" alt=""></div>
+                        <div class="txt">
+                            <b>직원등록 및 급여관리</b>
+                            <div class="flex">
+                                <div>
+                                    <p>
+                                        직원의 정보를 등록하여<br />
+엑셀로 주고받던 급여계산내역을<br />
+편리하게 공유하고 관리
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contBox">
+                        <div class="img"><img src="/images/sub/linkedSec2__img06.jpg" alt=""></div>
+                        <div class="txt">
+                            <b>사업분석보고서</b>
+                            <div class="flex">
+                                <div>
+                                    <p>
+                                        빅데이터를 통해 자동으로<br />
+경영현황을 진단하여<br />
+수임고객의 경영 컨설팅
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="wehago_03 view-full">
+            <ul>
+                <li>
+                    <div class="inner">
+                        <div class="img"><img src="/images/sub/linkedSec3_img01.png" alt=""></div>
+                        <div class="txt">
+                            <div class="icon">
+                                <div><img src="/images/sub/linkedSec3_icon01.png" alt=""></div>
+                                <div><img src="/images/sub/linkedSec3_icon02.png" alt=""></div>
+                                <div><img src="/images/sub/linkedSec3_icon03.png" alt=""></div>
+                            </div>
+                            <strong>통장입·출금 현황</strong>
+                            <b>등록된 계좌의 잔액을 실시간으로 확인할 수 있습니다.</b>
+                            <p>자동 스크래핑으로 통장내역조회</p>
+                            <p>기간별/조건검색을 통한 특정 내역 조회</p>
+                            <p>통장 거래내역에 메모 가능</p>
+                            <p>입금/출금내역 관리</p>
+                            <span>WEHAGO T 연결기능 - 통장관리</span>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <div class="img"><img src="/images/sub/linkedSec3_img02.png" alt=""></div>
+                        <div class="txt">
+                            <div class="icon">
+                                <div><img src="/images/sub/linkedSec3_icon04.png" alt=""></div>
+                                <div><img src="/images/sub/linkedSec3_icon05.png" alt=""></div>
+                                <div><img src="/images/sub/linkedSec3_icon06.png" alt=""></div>
+                            </div>
+                            <strong>매출·매입 현황</strong>
+                            <b>기간/유형별로 매출·매입 현황을 확인할 수 있습니다.</b>
+                            <p>신용카드, 현금영수증, 세금계산서 등 유형별 매출·매입현황 조회</p>
+                            <p>그래프로 한눈에 보는 매출·매입현황</p>
+                            <p>매출/매입별 상세내역 조회</p>
+                            <span>WEHAGO T 연결기능 - 자동전표처리</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <div class="img"><img src="/images/sub/linkedSec3_img03.png" alt=""></div>
+                        <div class="txt">
+                            <div class="icon">
+                                <div><img src="/images/sub/linkedSec3_icon07.png" alt=""></div>
+                                <div><img src="/images/sub/linkedSec3_icon08.png" alt=""></div>
+                                <div><img src="/images/sub/linkedSec3_icon09.png" alt=""></div>
+                            </div>
+                            <strong>신고/납부현황</strong>
+                            <b>신고서 및 납부서를 조회하고 납부이력을 관리할 수 있습니다.</b>
+                            <p>신고서 및 세액확인을 통한 즉시 납부 기능</p>
+                            <p>홈택스에서 제공되는 납부확인서로 민원서류발급 절차없는 납부확인</p>
+                            <p>신고/납부 이력 자동관리</p>
+                            <p>그래프로 보기 쉬운 신고현황</p>
+                            <span>WEHAGO T 연결기능 - 신고현황표</span>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <div class="img"><img src="/images/sub/linkedSec3_img04.png" alt=""></div>
+                        <div class="txt">
+                            <div class="icon">
+                                <div><img src="/images/sub/linkedSec3_icon10.png" alt=""></div>
+                                <div><img src="/images/sub/linkedSec3_icon11.png" alt=""></div>
+                                <div><img src="/images/sub/linkedSec3_icon12.png" alt=""></div>
+                            </div>
+                            <strong>청구서 조회 및 납부</strong>
+                            <b>청구되는 수임료의 내역을 확인하고 즉시 납부할 수 있습니다.</b>
+                            <p>나의 납부정보 및 세무대리인의 납부정보 확인</p>
+                            <p>발송받은 청구서를 통한 수임료/미납대금 전자결재</p>
+                            <p>한눈에 확인하는 납부내역</p>
+                            <span>WEHAGO T 연결기능 – 청구 및 정산관리</span>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <div class="img"><img src="/images/sub/linkedSec3_img05.png" alt=""></div>
+                        <div class="txt">
+                            <div class="icon">
+                                <div><img src="/images/sub/linkedSec3_icon13.png" alt=""></div>
+                                <div><img src="/images/sub/linkedSec3_icon14.png" alt=""></div>
+                                <div><img src="/images/sub/linkedSec3_icon15.png" alt=""></div>
+                            </div>
+                            <strong>경비현황분석</strong>
+                            <b>
+                                우리회사의 경비사용흐름을 한눈에 파악
+사용자별/기간별로 쉽게 확인하고 깔끔한 자금관리를 시작하세요
+                            </b>
+                            <p>법인카드,개인카드서비스에 사용된 경비 정보연계</p>
+                            <p>지정된 관리부서별 통계자료확인</p>
+                            <p>기간별/조직별/용도별 리포트 확인</p>
+                            <a href="#">리플릿 자세히 보기 <img src="/images/sub/wehago_slide__arr.png" alt=""></a>
+                        </div>
+                        
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="wehago_04">
+            <div class="cont_txt">
+                <b>WEHAGO features</b>
+                <h5>
+                    WEHAGO 특장점
+                </h5>
+            </div>
+            <div class="wehago_slide">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="img"><img src="/images/sub/smart_A10__img01.png" alt=""></div>
+                            <div class="txt">
+                                <strong>올인원 플랫폼</strong>
+                                <b>우리 회사의 모든 업무가 하나로 연결</b>
+                                <p>
+                                    경영관리를 위한 전문적인 프로그램 (Smart A10)부터
+                                    업무효율화와 협업에 필요한 메신저,화상회의, 문서관리,
+                                    전자결재, GPS기반 근태관리 등 우리 회사 업무에 필요한
+                                    다양한 솔루션을 하나의플랫폼에서 사용할 수 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img"><img src="/images/sub/smart_A10__img01.png" alt=""></div>
+                            <div class="txt">
+                                <strong>올인원 플랫폼</strong>
+                                <b>우리 회사의 모든 업무가 하나로 연결</b>
+                                <p>
+                                    경영관리를 위한 전문적인 프로그램 (Smart A10)부터
+                                    업무효율화와 협업에 필요한 메신저,화상회의, 문서관리,
+                                    전자결재, GPS기반 근태관리 등 우리 회사 업무에 필요한
+                                    다양한 솔루션을 하나의플랫폼에서 사용할 수 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img"><img src="/images/sub/smart_A10__img01.png" alt=""></div>
+                            <div class="txt">
+                                <strong>올인원 플랫폼</strong>
+                                <b>우리 회사의 모든 업무가 하나로 연결</b>
+                                <p>
+                                    경영관리를 위한 전문적인 프로그램 (Smart A10)부터
+                                    업무효율화와 협업에 필요한 메신저,화상회의, 문서관리,
+                                    전자결재, GPS기반 근태관리 등 우리 회사 업무에 필요한
+                                    다양한 솔루션을 하나의플랫폼에서 사용할 수 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="wehago_05">
+            <div class="cont_txt">
+                <b>WEHAGO VIDEO</b>
+                <h5>
+                    <span>쉽게, 편리하게, 다 함께 </span>WEHAGO
+                </h5>
+            </div>
+            <ul class="video__wrap">
+                <li>
+                    <a href="https://www.youtube.com/watch?v=Z3B0H0HFvTE" data-fancybox >
+                        <img src="/images/sub/wehago_video_01.jpg" alt="">
+                    </a>
+                    <b>【ONE AI】 세무회계사무소를 위한 혁신적인 AI 서비스, ONE AI 소개해드릴게요📢</b>
+                    <!-- <p>2024.04.02</p> -->
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=6i1zJj8yoTI" data-fancybox >
+                        <img src="/images/sub/wehago_video_02.jpg" alt="">
+                    </a>
+                    <b>【WEHAGO T】 수임처정보 & 타임머신</b>
+                    <!-- <p>2024.04.02</p> -->
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=QQGuQfRKrmg" data-fancybox >
+                        <img src="/images/sub/wehago_video_03.jpg" alt="">
+                    </a>
+                    <b>【WEHAGO】 이용가이드</b>
+                    <!-- <p>2024.04.02</p> -->
+                </li>
+            </ul>
+        </div>
+    </div>
+	<!--#include virtual=common/include/footer.asp-->
+</div>
+<script type="text/javascript">
+	$(function () {
+	});
+
+
+
+                var wehago_04 = new Swiper('.wehago_01 .wehago_slide .swiper', {
+                direction: 'horizontal',
+                // loop: true,
+                speed: 1200,
+                spaceBetween: 20,
+                slidesPerView: 1,
+                centeredSlides: true,
+                allowTouchMove: true,
+                observer: true,
+                observeParents: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.wehago_01 .wehago_slide .swiper-pagination',
+                    type: 'bullets',
+                },
+
+
+
+
+            });
+
+            
+            var wehago_04 = new Swiper('.wehago_04 .wehago_slide .swiper', {
+                direction: 'horizontal',
+                // loop: true,
+                speed: 1200,
+                spaceBetween: 20,
+                slidesPerView: 1,
+                centeredSlides: true,
+                allowTouchMove: true,
+                observer: true,
+                observeParents: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.wehago_04 .wehago_slide .swiper-pagination',
+                    type: 'bullets',
+                },
+
+
+
+            });
+</script>
+</body>
+</html>

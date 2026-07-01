@@ -1,0 +1,309 @@
+<!--#include virtual = _lib/common.asp-->
+<%
+GB_seoTitle       = "더존 PMS — 프로젝트 관리 시스템 | Amaranth 10 | 아이원소프트뱅크"
+GB_seoDescription = "더존 PMS — 프로젝트 정보·진척현황·인력배정·원가/예산 통합 관리. Amaranth 10 ERP·그룹웨어와 완전 연동되는 직관적 프로젝트 관리 솔루션. 무료 데모 1877-0256."
+GB_seoKeywords    = "더존PMS,프로젝트관리,PMS,Amaranth10,프로젝트관리시스템,진척관리,원가분석,예산관리,WBS,ERP연동"
+GB_seoOgType      = "product"
+%>
+<!DOCTYPE html>
+<html lang="ko" class="sub">
+<head>
+	<!--#include virtual=common/include/head.asp-->
+	<!-- BreadcrumbList — 검색결과 빵부스러기 표시 -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		"itemListElement": [
+			{ "@type": "ListItem", "position": 1, "name": "홈",          "item": "https://duzon119.co.kr/" },
+			{ "@type": "ListItem", "position": 2, "name": "제품/서비스", "item": "https://duzon119.co.kr/product/amaranth10.asp" },
+			{ "@type": "ListItem", "position": 3, "name": "Amaranth 10", "item": "https://duzon119.co.kr/product/amaranth10/brand.asp" },
+			{ "@type": "ListItem", "position": 4, "name": "PMS",         "item": "https://duzon119.co.kr/product/pms.asp" }
+		]
+	}
+	</script>
+</head>
+
+<body data-pgCode="010101">
+
+<!--[s] Skip To Content -->
+<a href="#contents" class="skip">&raquo; 본문 바로가기</a>
+<!--[e] Skip To Content -->
+
+<div id="wrap">
+	<!--#include virtual=common/include/header.asp-->
+	<!--#include virtual=common/include/subTop.asp-->
+
+	<div id="" class="inConts1720">
+        <ul class="amaranth10__list">
+            <li><a href="/product/amaranth10/brand.asp">그룹웨어</a></li>
+            <li><a href="/product/amaranth10/overview.asp">ERP(회계관리)</a></li>
+            <li><a href="/product/amaranth10/hr.asp">ERP(인사관리)</a></li>
+            <li><a href="/product/amaranth10/lm.asp">ERP(물류관리)</a></li>
+            <li><a href="/product/pms.asp" class="active">PMS</a></li>
+        </ul>
+    <h1 class="hidden_for_a11y" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">더존 PMS — Amaranth 10 프로젝트 관리 시스템</h1>
+        <div class="contWrap pms view-full">
+            <div class="sect_faetures">
+                <div class="pms_ftrs">
+                    <div class="cont_txt">
+                        <h5>PMS 주요기능</h5>
+                        <p>
+                            PMS는 간편하고 직관적인 인터페이스를 통해 사용자들이 프로젝트를 효과적으로 관리할 수 있도록 지원합니다.<br>
+                            이를 통해 프로젝트 수행의 투명성을 높이고, 프로젝트 팀이 협력하여 성공적으로 프로젝트를 완수할 수 있도록 돕습니다.
+                        </p>
+                    </div>
+                    <div class="cont_li">
+                        <dl>
+                            <dt>
+                                <span class="img_box"><img src="/images/sub/pms_faetures_01.jpg" alt="더존 PMS 프로젝트 정보개요 화면"></span>
+                                <p>프로젝트 정보개요</p>
+                            </dt>
+                            <dd>
+                                <p>프로젝트의 핵심 정보 한 눈에 파악</p>
+                                <p>프로젝트 목표, 기간, 예산 등의 기본 정보를 정리하여 프로젝트 이해도를 높이고 계획 수립에 도움을 줌</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <span class="img_box"><img src="/images/sub/pms_faetures_02.jpg" alt="더존 PMS 진척현황 모니터링 화면"></span>
+                                <p>진척현황 모니터링</p>
+                            </dt>
+                            <dd>
+                                <p>프로젝트 진행 상황 실시간 모니터</p>
+                                <p>과업 단계, 마일스톤 달성, 작업 일정 등의 핵심 지표를 시각적 확인</p>
+                                <p>팀 간의 협업과 의사결정 지원</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <span class="img_box"><img src="/images/sub/pms_faetures_03.jpg" alt="더존 PMS 인력배정 및 협업 화면"></span>
+                                <p>인력배정 및 협업</p>
+                            </dt>
+                            <dd>
+                                <p>효율적인 인력 관리를 위해 프로젝트 팀원의 역할 및 책임을 명확히 할당</p>
+                                <p>각 팀원 간의 협업을 원활하게 지원</p>
+                                <p>실시간 채팅, 업무 공유 기능 통한 팀 협업성 강화</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <span class="img_box"><img src="/images/sub/pms_faetures_04.jpg" alt="더존 PMS 원가분석 및 예산관리 화면"></span>
+                                <p>원가분석 및 예산관리</p>
+                            </dt>
+                            <dd>
+                                <p>프로젝트의 원가 체계적 분석 및 예산 효과적 관리</p>
+                                <p>예산 초과 및 경비 분석 통한 재정 통제 강화</p>
+                                <p>경제적, 효율적인 프로젝트 수행 지원</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="img_faetures">
+                    <div class="cont_txt tac">
+                        <h5>주요기능</h5>
+                        <p>
+                            쉽고 직관적인 환경에서 통합된 프로세스와 데이터를 기반으로 신속정확한 정보 제공을 통한 전략적 의사결정을 지원하는 통합 시스템
+                        </p>
+                    </div>
+                    <div class="scroll_info"></div>
+                    <div class="cont_img scrollTb">
+                        <img src="/images/sub/pms_faetures_grp01.jpg" alt="더존 PMS 기능 그룹 이미지">
+                    </div>
+                </div>
+            </div>
+
+            <div class="pms_ftrs_diagram">
+                <div class="cont_txt tac">
+                    <h5>PMS 기능구성도</h5>
+                    <p>
+                        쉽고 직관적인 환경에서 통합된 프로세스와 데이터를 기반으로 신속정확한 정보 제공을 통한 전략적 의사결정을 지원하는 통합 시스템
+                    </p>
+                </div>
+                <div class="scroll_info"></div>
+                <div class="img_box scrollTb"><img src="/images/sub/pms_ftrs_diagram.png" alt="더존 PMS 주요 기능 다이어그램"></div>
+            </div>
+
+            <div class="revers_wrap">
+                <div class="sect01">
+                    <div class="cont_txt">
+                        <h5>
+                            대시보드
+                        </h5>
+                        <p>
+                            핵심성과지표를 중심으로 비즈니스의 현재 상황을 종합적으로 파악하고,<br>
+                            목표 달성 여부를 효과적으로 관리하며,<br>
+                            미래 전략 수립을 위한 중요한 인사이트를 제공합니다.
+                        </p>
+                    
+                    </div>
+                    <div class="img"><img src="/images/sub/pms_sect01_01.png" alt="더존 PMS 프로젝트 정보개요 상세"></div>
+                </div>
+                <div class="sect02">
+                    <div class="cont_txt">
+                        <h5>
+                            계약현황
+                        </h5>
+                        <p>
+                            단순히 계약 건수를 보여주는 것을 넘어,<br>
+                            각 계약이 가져오는 잠재적인 가치를 평가하고,<br>
+                            현재 진행 중인 영업 활동의 성과를 측정하며,<br>
+                            향후 영업 전략 수립에 필요한 통찰력을 제공합니다.
+                        </p>
+                    
+                    </div>
+                    <div class="img"><img src="/images/sub/pms_sect02_01.png" alt="더존 PMS 진척현황 모니터링 상세"></div>
+                </div>
+            </div>
+
+            <div class="gw_info">
+                <h3>서비스소개: GW</h3>
+                <p class="pms_pg_int tac">
+                    그룹웨어솔루션은 거래량이 상당해져 거래내역을 전부 파악하고 승인하는 것이 어려워졌을 때,<br class="ptVar">
+                    업무관리에 어려움을 겪는 기업을 위해 개발되었습니다.
+                </p>
+
+                <div class="sect_faetures">
+                    <div class="cont_txt">
+                        <h5>GW 주요기능</h5>
+                    </div>
+                    <div class="cont_li">
+                        <dl>
+                            <dt>
+                                <span class="img_box"><img src="/images/sub/gw_faetures_01.jpg" alt="그룹웨어 사용자 친화 인터페이스"></span>
+                                <p>전자결제 시스템</p>
+                            </dt>
+                            <dd>
+                                사내 프로세스를 효과적으로 <br class="pVar">
+                                관리하기 위한 전자결재 <br class="pVar">
+                                시스템을 제공하여 업무 <br class="pVar">
+                                흐름 최적화
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <span class="img_box"><img src="/images/sub/gw_faetures_02.jpg" alt="그룹웨어 협업 기능"></span>
+                                <p>손익현황 분석</p>
+                            </dt>
+                            <dd>
+                                데이터 기반의 손익현황과 분석<br class="pVar">
+                                기능을 통해 조직의 재무 상태를<br class="pVar">
+                                파악하고 미래 비즈니스 전략을<br class="pVar">
+                                수립, 실행할 수 있도록 지원
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <span class="img_box"><img src="/images/sub/gw_faetures_03.jpg" alt="그룹웨어 보안 및 권한 관리"></span>
+                                <p>다양한 보고서 및 분석도구</p>
+                            </dt>
+                            <dd>
+                                조직의 업무 성과를 평가하고<br class="pVar">
+                                개선하기 위한 다양한 형태의<br class="pVar">
+                                보고서와 분석 도구 제공
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="img_faetures">
+                    <div class="cont_txt tac">
+                        <h5>GW 확장가능한 기능</h5>
+                        <p>
+                            그룹웨어 솔루션은 조직의 규모에 맞게 확장 가능하며, 핵심적인 전자결재, 손익현황 분석, 다양한 보고서 분석<br class="ptVar">
+                            도구를 통해 업무 효율성을 높이고 의사결정 속도를 향상시킵니다.
+                        </p>
+                    </div>
+                    <div class="scroll_info"></div>
+                    <div class="cont_img scrollTb">
+                        <img src="/images/sub/gw_faetures_grp01.jpg" alt="그룹웨어 기능 그룹 이미지">
+                    </div>
+                </div>
+            </div>
+
+            <div class="revers_wrap">
+                <div class="sect03">
+                    <div class="cont_txt">
+                        <h5>
+                            계약관리
+                        </h5>
+                        <p>
+                            프로젝트를 중심으로 계약 정보를 통합적으로 관리하고<br>
+                            시각화하여,프로젝트의 진행 상황을 한눈에 파악하고,<br>
+                            효율적인 자원 배분 및 우선순위 설정을 가능하게 함으로써<br>
+                            프로젝트 관리의 효율성을 극대화합니다.
+                        </p>
+            
+                    </div>
+                    <div class="img"><img src="/images/sub/pms_sect03_01.png" alt="더존 PMS 원가분석 예산관리 상세"></div>
+                </div>
+                <div class="sect04">
+                    <div class="cont_txt">
+                        <h5>
+                            프로젝트 현황
+                        </h5>
+                        <p>
+                            각 프로젝트의 세부적인 진행 상황과 관련된 핵심 정보를<br>
+                            통합적으로 파악하고 관리할 수 있도록 설계되었습니다.<br>
+                            이는 프로젝트의 시작부터 완료까지 필요한 모든 주요 정보를<br>
+                            한눈에 확인하고,잠재적인 문제점을 조기에 발견하여<br>
+                            효율적인 프로젝트 관리를 가능하게 합니다.
+                        </p>
+            
+                    </div>
+                    <div class="img"><img src="/images/sub/pms_sect04_01.png" alt="더존 PMS 영업 활동 관리 화면"></div>
+                </div>
+                <div class="sect05">
+                    <div class="cont_txt">
+                        <h5>
+                            진행상황
+                        </h5>
+                        <p>
+                            매출, 손익, 목표 달성률을 심층적으로 관리하고<br>
+                            분석 정보를 제공하여,주간회의 결과 및 결정 사항을<br>
+                            공유하여 실행력을 높이고,이를 통해 데이터 기반의<br>
+                            상세한 성과 관리 및 업무진행 기능을 제공
+                        </p>
+            
+                    </div>
+                    <div class="img"><img src="/images/sub/pms_sect05_01.png" alt="더존 PMS 프로젝트 일정 관리 화면"></div>
+                </div>
+                <div class="sect06">
+                    <div class="cont_txt">
+                        <h5>
+                            GW
+                        </h5>
+                        <p>
+                            결제 진행 상황을 투명하게 관리하고<br>
+                            결재 문서의 효율적인 작성 및 결재<br>
+                            프로세스를 제공
+                        </p>
+            
+                    </div>
+                    <div class="img"><img src="/images/sub/pms_sect06_01.png" alt="더존 PMS 인력 관리 화면"></div>
+                </div>
+                <div class="sect07">
+                    <div class="cont_txt">
+                        <h5>
+                            예약관리
+                        </h5>
+                        <p>
+                            자원사용 현황을 통합적으로 보여주고<br>
+                            회의실, 장비 등 자원 등록 및 예약 관리<br>
+                            기능을 제공
+                        </p>
+            
+                    </div>
+                    <div class="img"><img src="/images/sub/pms_sect07_01.png" alt="더존 PMS 보고서 및 분석 화면"></div>
+                </div>
+            </div>
+
+        </div>
+	</div>
+	<!--#include virtual=common/include/footer.asp-->
+</div>
+<script type="text/javascript">
+	$(function () {
+	});
+</script>
+</body>
+</html>

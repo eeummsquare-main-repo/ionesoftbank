@@ -1,0 +1,15 @@
+{
+  "name": "아이원소프트뱅크 - 더존 ERP 공식 파트너",
+  "short_name": "더존119",
+  "description": "더존 ERP 도입 컨설팅 25년 경력. Amaranth10·WEHAGO·iCUBE·PMS 도입부터 사후관리까지.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0369ec",
+  "lang": "ko-KR",
+  "icons": [
+    { "src": "/images/favicon.ico", "sizes": "48x48", "type": "image/x-icon" },
+    { "src": "/images/logo_2026_on.png", "sizes": "any", "type": "image/png", "purpose": "any" }
+  ]
+}

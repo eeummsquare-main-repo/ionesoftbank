@@ -1,0 +1,42 @@
+
+.HKeditorContent{
+	font-size:14px;
+	line-height:24px;
+	margin:5px;
+}
+
+.loading img { position: absolute; top: 50%; margin-top: -25px; left: 50%; margin-left: -25px; width: 50px; height: 50px; }
+
+/* Attached File TB */
+#inRow td{ border-left:0; border-top:0; padding:2px 0; }
+
+/* Attached File */
+.attachedFile { position:relative; float:left; width:100%; padding-bottom:5px;}
+.attachedFile *{ margin:0; padding:0; font-size:11px; vertical-align:middle;}
+.attachedFile dt img{ margin-right:5px; vertical-align: middle;}
+.attachedFile dt .fileToggle{ border:0; padding:0; overflow:visible; cursor:pointer; font-size:12px; background:none; vertical-align:middle; font-weight:bold;}
+.attachedFile dd { padding-bottom:10px;}
+.attachedFile ul.files *{ display:inline-block; *display:inline; padding:0; margin:0; font-size:11px;}
+.attachedFile ul.files li{ position:relative; margin:0 10px 0 0;}
+.attachedFile ul.files a{ position:relative; background-repeat:no-repeat; background-position:left center; *zoom:1; text-decoration:none !important;}
+.attachedFile ul.files a{ padding:2px 0 0 15px; background-image:url(/_lib/memberimg/iconFile.gif); color:#4d4d4d;}
+
+
+/* popup */
+.dimmed { position: absolute; top: 0; left: 0; z-index: 99998; width: 100%; height: 100%; background: #282828; opacity: .5; filter: alpha(opacity=50); }
+.popWrap { position: absolute; top: 0; width: 100%; height: 100%; z-index:99998}
+.popCon { position: fixed; z-index: 99999; }
+.popCon h1 { position: absolute; top: 0; left: 0; height:31px; width: 100%; padding-top:10px;  background-color:#565b5c; color:#fff; font-size:18px; font-weight:normal; text-indent: 29px; }
+.popCon h1:after{ clear:both; content:""; display:block; }
+.popCon .btnClose { position:absolute; top:15px; right:15px; }
+.popCon #container { padding: 60px 0 40px 0; background: #fff !important; }
+.popCon #contents { padding: 0 20px; }
+
+
+.imgreadyPack{display:block; width:390px; height:300px; font-size:18px; line-height:300px; text-align:center; background-color: #343232; color: #999999}
+.imgreadyEvent{display:block; width:300px; height:320px; font-size:18px; line-height:320px; text-align:center; background-color: #343232; color: #999999}
+
+.imgreadyPack_Mobile{display:block; width:290px; height:208px; font-size:18px; line-height:208px; text-align:center; background-color: #343232; color: #999999}
+.imgreadyEvent_Mobile{display:block; width:290px; height:290px; font-size:18px; line-height:290px; text-align:center; background-color: #343232; color: #999999}
+
+.disNone {display:none !important;}
