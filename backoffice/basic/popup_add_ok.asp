@@ -77,6 +77,9 @@ Call edNonceReg(edNonce)
 DBcon.Close
 Set DBcon=Nothing
 
+Application("idx_popmob_0_1_ts") = ""
+Application("idx_popmob_0_1_data") = ""
+
 IF Result=0 Then
 	AlertStr="팝업이 등록되었습니다."
 Else

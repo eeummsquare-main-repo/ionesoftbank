@@ -100,6 +100,9 @@ Call edNonceReg(edNonce)
 DBcon.Close
 Set DBcon=Nothing
 
+Application("idx_popmob_0_1_ts") = ""
+Application("idx_popmob_0_1_data") = ""
+
 strLocation="popup.asp?langmode="&langmode
 Response.Write ExecJavaAlert(AlertStr,2)
 %>
