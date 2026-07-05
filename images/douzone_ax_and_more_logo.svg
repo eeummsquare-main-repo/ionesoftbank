@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 758 180" width="758" height="180" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="axGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5CA6EC"/>
+      <stop offset="50%" stop-color="#5056E5"/>
+      <stop offset="100%" stop-color="#9E3BE2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- LEFT SECTION: Authentic and Innovation / AX and More -->
+  <g transform="translate(60, 40)">
+    <text x="0" y="0" font-family="'Pretendard','Noto Sans KR','Malgun Gothic',Arial,sans-serif" font-size="14" font-weight="600" fill="#222222" letter-spacing="0.3">
+      <tspan>Authentic</tspan>
+      <tspan dx="6" fill="#888888" font-weight="500">and</tspan>
+      <tspan dx="6">Innovation</tspan>
+    </text>
+
+    <!-- Sparkle icon above AX -->
+    <g transform="translate(4, 30)">
+      <path d="M 10 0 L 12 8 L 20 10 L 12 12 L 10 20 L 8 12 L 0 10 L 8 8 Z" fill="#5CA6EC"/>
+      <circle cx="22" cy="4" r="2.6" fill="#9E3BE2"/>
+    </g>
+
+    <!-- Main text: AX and More -->
+    <text x="0" y="90" font-family="'Pretendard','Noto Sans KR','Malgun Gothic',Arial,sans-serif" font-size="56" font-weight="800" letter-spacing="-1">
+      <tspan fill="url(#axGradient)">AX</tspan>
+      <tspan dx="10" fill="#5056E5">and</tspan>
+      <tspan dx="10" fill="#9E3BE2">More</tspan>
+    </text>
+  </g>
+
+  <!-- Vertical Divider -->
+  <line x1="420" y1="35" x2="420" y2="145" stroke="#D0D0D0" stroke-width="1.2"/>
+
+  <!-- RIGHT SECTION: DOUZONE -->
+  <g transform="translate(455, 40)">
+    <text x="0" y="70" font-family="Arial,'Helvetica Neue',sans-serif" font-size="64" font-weight="900" letter-spacing="-2">
+      <tspan fill="#313131">D</tspan><tspan fill="#00A3E0">O</tspan><tspan fill="#313131">U</tspan><tspan fill="#313131">Z</tspan><tspan fill="#00A3E0">O</tspan><tspan fill="#313131">N</tspan><tspan fill="#313131">E</tspan>
+    </text>
+
+    <g transform="translate(0, 100)">
+      <rect x="0" y="0" width="115" height="22" rx="2" fill="#555555"/>
+      <text x="57.5" y="15" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.3">Business Partner</text>
+      <text x="125" y="16" font-family="'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif" font-size="15" font-weight="700" fill="#313131" letter-spacing="-0.3">아이원소프트뱅크</text>
+    </g>
+  </g>
+</svg>
