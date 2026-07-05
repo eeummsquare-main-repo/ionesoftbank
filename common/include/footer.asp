@@ -49,7 +49,7 @@
 					<a href="https://blog.naver.com/zhogksgjqm" target="_blank"><img src="/images/main/blog.png" alt="아이원소프트뱅크 네이버 블로그" loading="lazy" decoding="async"></a>
 					<a href="https://www.instagram.com/ione130501?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank"><img src="/images/main/insta.png" alt="아이원소프트뱅크 인스타그램" loading="lazy" decoding="async"></a>
 					<a href="http://pf.kakao.com/_xnFVzK" target="_blank"><img src="/images/main/Kakao.png" alt="아이원소프트뱅크 카카오톡 채널" loading="lazy" decoding="async"></a>
-					<a href="https://youtube.com/@IONEsoftBK_official?si=r5_CIRHiMzhLeADq" target="_blank"><img src="/images/main/youtube.png" alt="아이원소프트뱅크 유튜브" loading="lazy" decoding="async"></a>
+					<a href="https://youtube.com/@IONEsoftBK_official?si=r5_CIRHiMzhLeADq" target="_blank"><img src="/images/icon_social_youtobe_c.png" alt="아이원소프트뱅크 유튜브" loading="lazy" decoding="async"></a>
 				</div>
 			</div>
 		</div>

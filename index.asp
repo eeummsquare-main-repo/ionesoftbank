@@ -332,11 +332,19 @@ End Function
                     </li>
                     <li>
                         <a href="javascript:openCardnewsModal();">
-                            <svg class="cardnews-ico" aria-hidden="true" viewBox="0 0 32 32" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="4" y="6" width="24" height="20" rx="2"></rect>
-                                <line x1="9" y1="12" x2="23" y2="12"></line>
-                                <line x1="9" y1="17" x2="23" y2="17"></line>
-                                <line x1="9" y1="22" x2="18" y2="22"></line>
+                            <svg class="cardnews-ico" aria-hidden="true" viewBox="0 0 48 48" width="42" height="42" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="cnGrad" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#4a9dff"/>
+                                        <stop offset="100%" stop-color="#0863de"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect x="6" y="10" width="30" height="32" rx="3" fill="#e8f1ff" stroke="#0863de" stroke-width="2"/>
+                                <rect x="10" y="6" width="30" height="32" rx="3" fill="url(#cnGrad)"/>
+                                <rect x="14" y="12" width="22" height="8" rx="1.5" fill="#fff" opacity="0.95"/>
+                                <line x1="14" y1="26" x2="36" y2="26" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+                                <line x1="14" y1="30" x2="36" y2="30" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+                                <line x1="14" y1="34" x2="28" y2="34" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
                             </svg>
                             <span>카드뉴스<br>신청하기</span>
                         </a>
@@ -399,9 +407,11 @@ End Function
 
             <style>
                 /* card-news quick button (3rd) — img와 동일한 흐름으로 배치 */
-                .quick-left ul li .cardnews-ico{display:block; width:36px; height:36px; color:#0863de;}
+                .quick-left ul li .cardnews-ico{display:block; width:56px; height:56px; margin:0 auto;}
                 /* 카드뉴스 텍스트 강제 줄바꿈 (BR 안 먹히는 환경 대비) */
                 .quick-left ul li a > span{white-space:normal; word-break:keep-all;}
+                /* 구분선을 아래로 내리기: 이전 li 하단 여백 확보 */
+                .quick-left ul li + li{margin-top:1.5rem;}
 
                 /* card-news modal */
                 #cardnewsLayer{position:fixed; inset:0; z-index:9999;}
@@ -762,7 +772,7 @@ End Function
                             </div>
                             <div class="right" data-aos="fade-up" data-aos-delay="200">
                                 <div class="contWrap">
-                                    <a href="/government/notice.asp" class="box box2">
+                                    <a href="/government/notice.asp" class="box box3">
                                         <b>UBSIDES</b>
                                         <strong>공지사항</strong>
                                         <p>
@@ -770,17 +780,6 @@ End Function
                                             공지사항입니다.
                                         </p>
                                     </a>
-                                    <a href="javascript:void(0);" class="box box3">
-                                        <b>smart factory</b>
-                                        <strong>스마트공장</strong>
-                                        <p>
-                                            제조업체 대상 스마트공장 <br />
-                                            으로 구축 지원
-                                        </p>
-                                    </a>
-                                    <div class="logo">
-                                        <img src="/images/main/sec4__logo.png" alt="정부지원사업 로고" style="width: 41.5rem;" loading="lazy" decoding="async">
-                                    </div>
                                     <a href="javascript:void(0);" class="box box4">
                                         <b>Other support</b>
                                         <strong>
@@ -791,6 +790,9 @@ End Function
                                             제어기, 센서 구입 지원
                                         </p>
                                     </a>
+                                    <div class="logo">
+                                        <img src="/images/logo_company_2026.bak2.png" alt="아이원소프트뱅크 로고" style="width: 41.5rem; height: auto; image-rendering: -webkit-optimize-contrast;">
+                                    </div>
                                 </div>
                             </div>
                         </div>

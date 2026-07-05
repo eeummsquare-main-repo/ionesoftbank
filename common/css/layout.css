@@ -206,22 +206,9 @@ html.hide{height:100vh; overflow:hidden;}
 #header .logo-h>a img.logo,
 #header .logo-h>a img.logo_on{height:4rem; width:auto;}
 #header .logo-h>a img.logo-tagline{height:6rem; width:auto;}
-#header .logo-h>a img{transition: filter 0.5s ease;}
-/* 구 .logo(흰 버전) 비활성화 — filter 방식으로 통합 처리 */
+/* 구 .logo(흰 버전) 비활성화 — 원본 컬러 이미지만 사용 */
 #header .logo-h>a img.logo{display:none;}
 #header .logo-h>a img.logo_on{display:inline-block;}
-/* 초기 상태(히어로 위 투명 헤더): 흰색 실루엣 — 메뉴 색상과 동일 패턴 */
-#header .logo-h>a img.logo_on,
-#header .logo-h>a img.logo-tagline{filter: brightness(0) invert(1) !important;}
-/* 헤더 호버/스크롤/고정 상태: 원본 컬러로 서서히 페이드 */
-#header:hover .logo-h>a img.logo_on,
-#header.scrolled .logo-h>a img.logo_on,
-#header.all .logo-h>a img.logo_on,
-#header.move .logo-h>a img.logo_on,
-#header:hover .logo-h>a img.logo-tagline,
-#header.scrolled .logo-h>a img.logo-tagline,
-#header.all .logo-h>a img.logo-tagline,
-#header.move .logo-h>a img.logo-tagline{filter: none !important;}
 
 
 
@@ -453,6 +440,7 @@ html.hide{height:100vh; overflow:hidden;}
 	#snb #nav>li.sDepth03{display:none;}
 
 	#snb #nav .lnbSub{background-color: #fff; border:1px solid rgba(191,191,191,0.6); position:absolute; left:-1px; right:-1px; top:calc(100% - 1px); z-index:3; display:none;}
+	#snb #nav .sMenu:hover > .lnbSub{display:block;}
 	#snb #nav .lnbSub>a{width:100%; height:6rem; padding:0.5rem 2rem; font-size:1.5rem; line-height:1.4; color:#717171; display: flex; align-items: center;}
 	#snb #nav .lnbSub>a>span{word-break:break-all !important;}
 	#snb #nav .lnbSub>a+a{border-top:1px solid rgba(191,191,191,0.6);}
