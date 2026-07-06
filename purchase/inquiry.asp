@@ -56,6 +56,25 @@ GB_seoKeywords = "더존ERP구매,ERP견적,ERP도입비용,ERP상담,Amaranth10
 
 		});
 	});
+
+	$(function(){
+		var today = new Date();
+		var yyyy = today.getFullYear();
+		var mm = String(today.getMonth()+1).padStart(2,'0');
+		var dd = String(today.getDate()).padStart(2,'0');
+		$('#meet_date').attr('min', yyyy+'-'+mm+'-'+dd);
+		$('#meet_date').on('change', function(){
+			var v = $(this).val();
+			if(!v) return;
+			var d = new Date(v);
+			var day = d.getDay();
+			if(day === 0 || day === 6){
+				alert('미팅날짜는 영업일(월~금)만 선택 가능합니다.');
+				$(this).val('');
+				$(this).focus();
+			}
+		});
+	});
 	</script>
 </head>
 
@@ -141,6 +160,40 @@ GB_seoKeywords = "더존ERP구매,ERP견적,ERP도입비용,ERP상담,Amaranth10
 						<p class="check-new"><input type="checkbox" id="hirer_05" name="note4" value="그룹웨어"><label for="hirer_05"><span class="graphic"></span>그룹웨어</label></p>
 						<p class="check-new"><input type="checkbox" id="hirer_06" name="note4" value="PMS/SI"><label for="hirer_06"><span class="graphic"></span>PMS/SI</label></p>
 					</div>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row"><span class="">미팅방법</span></th>
+				<td>
+					<div class="flex check wrap">
+						<p class="check-new"><input type="radio" id="meet_way_01" name="note5" value="원격미팅" class="reqField" reqTitle="미팅방법" required><label for="meet_way_01"><span class="graphic"></span>원격미팅</label></p>
+						<p class="check-new"><input type="radio" id="meet_way_02" name="note5" value="대면미팅" class="reqField" reqTitle="미팅방법" required><label for="meet_way_02"><span class="graphic"></span>대면미팅</label></p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row"><span class="">미팅날짜</span></th>
+				<td>
+					<input type="date" name="note6" id="meet_date" class="small reqField" reqTitle="미팅날짜" required>
+					<span style="color:#0799f0; line-height:1.3; padding-top:1rem;">(영업일 기준 월~금만 선택 가능)</span>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row"><span class="">미팅시간</span></th>
+				<td>
+					<select name="note7" class="small reqField" reqTitle="미팅시간" required>
+						<option value="">시간 선택</option>
+						<option value="09:00">09:00</option>
+						<option value="10:00">10:00</option>
+						<option value="11:00">11:00</option>
+						<option value="12:00">12:00</option>
+						<option value="13:00">13:00</option>
+						<option value="14:00">14:00</option>
+						<option value="15:00">15:00</option>
+						<option value="16:00">16:00</option>
+						<option value="17:00">17:00</option>
+						<option value="18:00">18:00</option>
+					</select>
 				</td>
 			</tr>
 			<tr>
