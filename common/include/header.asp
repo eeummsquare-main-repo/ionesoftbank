@@ -98,7 +98,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<a href="tel:1877-0840"><span><span>iCUBE G20 문의</span><strong>1877-0840</strong></span></a>
 			</div>
 		</div>
-		<a href="/purchase/inquiry.asp" class="quick-right-re"><img src="/images/main/q__cont02.png" alt="온라인 구매 상담" loading="lazy" decoding="async">
+		<a href="/purchase/inquiry.asp" class="quick-right-re"><img src="/images/icon_inq.jpg" alt="온라인 구매 상담" loading="lazy" decoding="async" style="background:#222; border-radius:50%; padding:1.4rem; box-sizing:border-box; width:6.4rem;">
 			<div class="quick-right-list">
 				<p class="black"><span><span>온라인 구매상담</span><strong>평일 09:00~18:00</strong></span></p>
 			</div>
