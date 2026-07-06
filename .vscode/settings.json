@@ -1,0 +1,9 @@
+{
+	// ── 크로스플랫폼(맥·윈도우) 작업 시 소스 꼬임 방지 설정 ──
+	// 이 저장소는 Windows/IIS ASP 사이트라 줄바꿈을 CRLF로, 인코딩을 UTF-8로 고정합니다.
+	"files.eol": "\r\n",
+	"files.encoding": "utf8",
+	"files.autoGuessEncoding": false,
+	"files.trimTrailingWhitespace": false,
+	"files.insertFinalNewline": false
+}

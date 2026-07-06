@@ -1,20 +1,13 @@
 # 이 저장소는 Windows/IIS Classic ASP 사이트입니다.
-# 맥·윈도우 어느 PC에서 작업하든 줄바꿈을 CRLF로 통일해 소스 꼬임을 방지합니다.
+# 소스는 이미 전부 CRLF(윈도우 줄바꿈)이며, git이 줄바꿈을 임의로
+# 바꾸지 않도록 자동변환을 끕니다. (맥·윈도우 어디서 작업하든 CRLF 그대로 유지)
+#
+# ※ 줄바꿈 유지는 다음 3가지로 보장됩니다.
+#   1) 이 파일: 이미지/바이너리 변환 금지 명시
+#   2) git config core.autocrlf=false (양쪽 PC 모두 권장)
+#   3) .vscode/settings.json 의 files.eol="\r\n" (편집기가 CRLF로 저장)
 
-# 모든 텍스트 파일: 작업트리에서 CRLF로 체크아웃 (git 내부 저장은 LF로 정규화)
-*.asp   text eol=crlf
-*.asa   text eol=crlf
-*.inc   text eol=crlf
-*.html  text eol=crlf
-*.htm   text eol=crlf
-*.js    text eol=crlf
-*.css   text eol=crlf
-*.xml   text eol=crlf
-*.json  text eol=crlf
-*.txt   text eol=crlf
-*.config text eol=crlf
-
-# 바이너리 파일: git이 절대 변환하지 않도록 지정
+# 이미지·바이너리: git이 절대 변환/훼손하지 않도록 지정
 *.png   binary
 *.jpg   binary
 *.jpeg  binary
