@@ -601,7 +601,17 @@ function sendMail(){
 						<th>제품선택</th>
 						<td colspan="3"><%=note4%></td>
 					</tr>
-					
+					<tr>
+						<th>미팅방법</th>
+						<td><%=note5%></td>
+						<th>미팅날짜</th>
+						<td><%=note6%></td>
+					</tr>
+					<tr>
+						<th>미팅시간</th>
+						<td colspan="3"><%=note7%></td>
+					</tr>
+
 				<% ElseIF BBscode="9" Then %>
 					<tr>
 						<th>회사명</th>

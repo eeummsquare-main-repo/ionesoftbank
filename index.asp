@@ -316,9 +316,9 @@ End Function
                 <p class="q_tit">DOUZONE</p>
                 <ul>
                     <li>
-                        <a href="javascript:link0000();">
-                            <img src="/images/q_left_icon_01.png" alt="무료방문요청" loading="lazy" decoding="async">
-                            <span>무료방문요청</span>
+                        <a href="/purchase/inquiry.asp">
+                            <img src="/images/q_left_icon_01.png" alt="무료상담신청" loading="lazy" decoding="async">
+                            <span>무료상담신청</span>
                         </a>
                     </li>
                     <li>

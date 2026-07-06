@@ -111,6 +111,8 @@ End IF
 
 IF LCase(THIS_DOMAIN) <> LCase(mainDomain) Then isRedirect = True
 IF Request.ServerVariables("HTTPS")="off" AND GB_Basic_Protocol="https" Then isRedirect = True
+' [LOCAL] localhost / 127.0.0.1 접속 시 SSL 강제 리다이렉트 우회
+IF InStr(LCase(thisHost), "localhost") > 0 OR InStr(thisHost, "127.0.0.1") > 0 Then isRedirect = False
 
 IF current_querystring<>"" Then
 	redirectUrl = GB_Basic_Protocol&"://"&mainDomain&current_url&"?"&current_querystring
