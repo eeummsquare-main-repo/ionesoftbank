@@ -74,8 +74,65 @@ GB_seoKeywords = "더존ERP구매,ERP견적,ERP도입비용,ERP상담,Amaranth10
 				$(this).focus();
 			}
 		});
+
+		// 미팅방법 선택 시 미팅날짜/시간 노출 + 필수화
+		function toggleMeetFields(){
+			if($('input[name="note5"]:checked').length > 0){
+				$('#meet_date_row, #meet_time_row').show();
+				$('#meet_date').addClass('reqField').attr('reqTitle','미팅날짜');
+				$('#meet_time').addClass('reqField').attr('reqTitle','미팅시간');
+			}else{
+				$('#meet_date_row, #meet_time_row').hide();
+				$('#meet_date, #meet_time').removeClass('reqField').val('');
+			}
+		}
+		// 라디오 재클릭 시 선택 해제 (토글)
+		$('input[name="note5"]').on('click', function(e){
+			if($(this).data('wasChecked')){
+				$(this).prop('checked', false).data('wasChecked', false);
+				toggleMeetFields();
+			}else{
+				$('input[name="note5"]').data('wasChecked', false);
+				$(this).data('wasChecked', true);
+				toggleMeetFields();
+			}
+		});
 	});
 	</script>
+
+	<style>
+		/* 미팅방법 라디오: 선택된 것만 파란 원형 표시 */
+		#inqFrm1 .check-new input[type=radio]+label>.graphic:before{opacity:0;}
+		#inqFrm1 .check-new input[type=radio]:checked+label>.graphic:before{opacity:1;}
+		/* 미팅날짜 input[type=date] 크기·정렬을 주변 텍스트 입력과 통일 */
+		#inqFrm1 input[type=date].small{
+			height:4.4rem;
+			padding:0 1.4rem;
+			font-size:1.6rem;
+			line-height:1;
+			border:1px solid var(--bor_c);
+			border-radius:.4rem;
+			background-color:#fff;
+			min-width:20rem;
+			vertical-align:middle;
+			box-sizing:border-box;
+		}
+		#inqFrm1 input[type=date].small::-webkit-calendar-picker-indicator{
+			cursor:pointer;
+			width:2rem;
+			height:2rem;
+			margin-left:.6rem;
+		}
+		#inqFrm1 #meet_date + span{
+			font-size:1.4rem;
+			margin-left:1rem;
+			vertical-align:middle;
+		}
+		#inqFrm1 select#meet_time.small{
+			height:4.4rem;
+			font-size:1.6rem;
+		}
+	</style>
 </head>
 
 <body data-pgCode="0301">
@@ -166,22 +223,22 @@ GB_seoKeywords = "더존ERP구매,ERP견적,ERP도입비용,ERP상담,Amaranth10
 				<th scope="row"><span class="">미팅방법</span></th>
 				<td>
 					<div class="flex check wrap">
-						<p class="check-new"><input type="radio" id="meet_way_01" name="note5" value="원격미팅" class="reqField" reqTitle="미팅방법" required><label for="meet_way_01"><span class="graphic"></span>원격미팅</label></p>
-						<p class="check-new"><input type="radio" id="meet_way_02" name="note5" value="대면미팅" class="reqField" reqTitle="미팅방법" required><label for="meet_way_02"><span class="graphic"></span>대면미팅</label></p>
+						<p class="check-new"><input type="radio" id="meet_way_01" name="note5" value="원격미팅"><label for="meet_way_01"><span class="graphic"></span>원격미팅</label></p>
+						<p class="check-new"><input type="radio" id="meet_way_02" name="note5" value="대면미팅"><label for="meet_way_02"><span class="graphic"></span>대면미팅</label></p>
 					</div>
 				</td>
 			</tr>
-			<tr>
+			<tr id="meet_date_row" style="display:none;">
 				<th scope="row"><span class="">미팅날짜</span></th>
 				<td>
-					<input type="date" name="note6" id="meet_date" class="small reqField" reqTitle="미팅날짜" required>
+					<input type="date" name="note6" id="meet_date" class="small" reqTitle="미팅날짜">
 					<span style="color:#0799f0; line-height:1.3; padding-top:1rem;">(영업일 기준 월~금만 선택 가능)</span>
 				</td>
 			</tr>
-			<tr>
+			<tr id="meet_time_row" style="display:none;">
 				<th scope="row"><span class="">미팅시간</span></th>
 				<td>
-					<select name="note7" class="small reqField" reqTitle="미팅시간" required>
+					<select name="note7" id="meet_time" class="small" reqTitle="미팅시간">
 						<option value="">시간 선택</option>
 						<option value="09:00">09:00</option>
 						<option value="10:00">10:00</option>

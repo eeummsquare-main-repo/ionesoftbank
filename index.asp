@@ -232,6 +232,16 @@ Function PT_vodBanner(Rec)
 			IF linkUrlBtnNm="" Then linkUrlBtnNm = "바로가기"
 			IF linkUrlBtnNm1="" Then linkUrlBtnNm1 = "바로가기"
 
+			' A10 체험하기 신청 계열 버튼은 구매상담 페이지로 강제 연결
+			IF InStr(linkUrlBtnNm, "체험하기 신청") > 0 Then
+				LinkUrl = "/purchase/inquiry.asp"
+				linkurlNewWin = 0
+			End IF
+			IF InStr(linkUrlBtnNm1, "체험하기 신청") > 0 Then
+				LinkUrl1 = "/purchase/inquiry.asp"
+				linkurlNewWin1 = 0
+			End IF
+
 			' 2026-06-30 첫 슬라이드 iframe만 fetchpriority="high" + loading="eager" — LCP 개선
 			Dim iframePriority
 			IF i = 0 Then
@@ -317,8 +327,8 @@ End Function
                 <ul>
                     <li>
                         <a href="/purchase/inquiry.asp">
-                            <img src="/images/q_left_icon_01.png" alt="무료상담신청" loading="lazy" decoding="async">
-                            <span>무료상담신청</span>
+                            <img src="/images/q_left_icon_01.png" alt="대면/비대면 상담신청" loading="lazy" decoding="async">
+                            <span>대면/비대면<br>상담신청</span>
                         </a>
                     </li>
                     <li>
