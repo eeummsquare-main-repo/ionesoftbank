@@ -70,7 +70,7 @@ End If
 On Error Goto 0
 
 Dim iName, iCompany, iPhone, iEmail, iType, iContent, iAgree
-Dim iPosition, iBiz, iFax, iMeetMethod, iMeetDate, iMeetTime
+Dim iPosition, iBiz, iFax, iMeetMethod, iMeetDate, iMeetTime, iProducts
 
 iName       = jsGet(data, "name", "")
 iCompany    = jsGet(data, "company", "")
@@ -85,6 +85,7 @@ iFax        = jsGet(data, "fax", "")
 iMeetMethod = jsGet(data, "meetMethod", "")
 iMeetDate   = jsGet(data, "meetDate", "")
 iMeetTime   = jsGet(data, "meetTime", "")
+iProducts   = jsGet(data, "products", "OmniEsol")
 
 Dim missing : missing = ""
 If Trim(CStr(iName))     = "" Then missing = missing & "name,"
@@ -106,10 +107,10 @@ reqIp = Request.ServerVariables("REMOTE_ADDR")
 
 Dim sqlIns
 sqlIns = "INSERT INTO BBslist(boardidx, writer, company, tel, email, phone, title, content, "
-sqlIns = sqlIns & "note1, note2, note3, note4, note5, note6, note7, "
+sqlIns = sqlIns & "note1, note2, note3, note4, note5, note6, note7, note8, "
 sqlIns = sqlIns & "publicYN, submit, editorYN, wip, regdate) "
 sqlIns = sqlIns & "OUTPUT INSERTED.idx AS newIdx "
-sqlIns = sqlIns & "VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 0, 0, 0, ?, Getdate())"
+sqlIns = sqlIns & "VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 0, 0, 0, ?, Getdate())"
 
 Dim objCmd, oRs, oNewIdx
 Set objCmd = Server.CreateObject("ADODB.Command")
@@ -128,10 +129,11 @@ objCmd.Parameters.Append objCmd.CreateParameter("@content", 203, 1, 1000000, CSt
 objCmd.Parameters.Append objCmd.CreateParameter("@note1", 202, 1, 100, Left(CStr(iType), 100))
 objCmd.Parameters.Append objCmd.CreateParameter("@note2", 202, 1, 100, Left(CStr(iPosition), 100))
 objCmd.Parameters.Append objCmd.CreateParameter("@note3", 202, 1, 100, Left(CStr(iBiz), 100))
-objCmd.Parameters.Append objCmd.CreateParameter("@note4", 202, 1, 50, Left(CStr(iFax), 50))
+objCmd.Parameters.Append objCmd.CreateParameter("@note4", 202, 1, 50, Left(CStr(iProducts), 50))
 objCmd.Parameters.Append objCmd.CreateParameter("@note5", 202, 1, 50, Left(CStr(iMeetMethod), 50))
 objCmd.Parameters.Append objCmd.CreateParameter("@note6", 202, 1, 50, Left(CStr(iMeetDate), 50))
 objCmd.Parameters.Append objCmd.CreateParameter("@note7", 202, 1, 50, Left(CStr(iMeetTime), 50))
+objCmd.Parameters.Append objCmd.CreateParameter("@note8", 202, 1, 50, Left(CStr(iFax), 50))
 objCmd.Parameters.Append objCmd.CreateParameter("@wip", 200, 1, 50, Left(CStr(reqIp), 50))
 
 On Error Resume Next
