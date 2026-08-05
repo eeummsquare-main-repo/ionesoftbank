@@ -212,10 +212,10 @@ GB_seoKeywords = "더존ERP구매,ERP견적,ERP도입비용,ERP상담,Amaranth10
 				<th scope="row"><span class="">제품선택</span></th>
 				<td>
 					<div class="flex check wrap">
+						<p class="check-new"><input type="checkbox" id="hirer_07" name="note4" value="OmniEsol"><label for="hirer_07"><span class="graphic"></span>OmniEsol</label></p>
 						<p class="check-new"><input type="checkbox" id="hirer_04" name="note4" value="Amaranth 10"><label for="hirer_04"><span class="graphic"></span>Amaranth 10</label></p>
 						<p class="check-new"><input type="checkbox" id="hirer_01" name="note4" value="WEHAGO(SmartA10)"><label for="hirer_01"><span class="graphic"></span>WEHAGO(SmartA10)</label></p>
 						<p class="check-new"><input type="checkbox" id="hirer_05" name="note4" value="그룹웨어"><label for="hirer_05"><span class="graphic"></span>그룹웨어</label></p>
-						<p class="check-new"><input type="checkbox" id="hirer_06" name="note4" value="PMS/SI"><label for="hirer_06"><span class="graphic"></span>PMS/SI</label></p>
 					</div>
 				</td>
 			</tr>

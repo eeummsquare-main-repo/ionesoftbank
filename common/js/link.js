@@ -16,12 +16,15 @@ console.log(langCode, ROOT_URL)
 /* 기본 게시판 */
 	function link0101(h){var urls = ROOT_URL+"product/amaranth10/brand.asp"; linkType(urls, h)}//공지사항
 	function link0102(h){var urls = ROOT_URL+"product/wehago/smart_A10.asp"; linkType(urls, h)}//공지사항
+	function link0104(h){var urls = ROOT_URL+"product/omniesol.asp"; linkType(urls, h)}//OmniEsol
 	function link0107(h){var urls = ROOT_URL+"product/oneai.asp"; linkType(urls, h)}//ONE AI
 	function link0108(h){var urls = ROOT_URL+"product/nonprofit/intro.asp"; linkType(urls, h)}//Amaranth 10(비영리)
 	function link0103(h){var urls = ROOT_URL+"product/pms.asp"; linkType(urls, h)}//공지사항
 
 /* 포토 게시판 */
 	function link0201(h){var urls = ROOT_URL+"government/notice.asp"; linkType(urls, h)}	//기본
+	function link0202(h){var urls = ROOT_URL+"government/promotion.asp"; linkType(urls, h)}	//더존프로모션
+	function link0408(h){window.open("https://www.youtube.com/channel/UCFXFG1O3huf_ZE6RFD2Lg9g", "_blank");}	//WEHAGO 교육영상 유튜브
 
 
 /* 소식마당 */
@@ -36,7 +39,8 @@ console.log(langCode, ROOT_URL)
 	function link0402(h){var urls = ROOT_URL+"icube/inquiry.asp"; linkType(urls, h)}	//육우 요리교실
 	function link0403(h){var urls = ROOT_URL+"bizbox/inquiry.asp"; linkType(urls, h)}	//육우 레시피북
 	function link0404(h){var urls = "http://1.244.116.142/"; linkType(urls, h)}	//육우 레시피북
-	function link0406(h){alert('준비중입니다.')}	//육우 레시피북
+	function link0406(h){var urls = ROOT_URL+"pms/inquiry.asp"; linkType(urls, h)}	//PMS AS 문의
+	function link0407(h){var urls = ROOT_URL+"omniesol/inquiry.asp"; linkType(urls, h)}	//OmniEsol AS 문의
 	//function link0406(h){var urls = ROOT_URL+"customer/customer_etc.asp"; linkType(urls, h)}	//육우 레시피북
 
 /* 참여마당 */

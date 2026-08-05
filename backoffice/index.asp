@@ -288,15 +288,17 @@ function drawVisualization() {
 								<table class="tbl_colMain">
 									<caption></caption>
 									<colgroup>
-										<col style="width: 20%" />
-										<col style="width: 20%" />
-										<col style="width: 20%" />
-										<col style="width: 20%" />
-										<col style="width: 20%" />
+										<col style="width: 16.66%" />
+										<col style="width: 16.66%" />
+										<col style="width: 16.66%" />
+										<col style="width: 16.66%" />
+										<col style="width: 16.66%" />
+										<col style="width: 16.66%" />
 									</colgroup>
 									<thead>
 										<tr>
 											<th scope="row"><a href='/backoffice/board/bbslist.asp?bbscode=1'>공지사항</a></th>
+											<th scope="row"><a href='/backoffice/board/bbslist.asp?bbscode=52'>더존프로모션</a></th>
 											<th scope="row"><a href='/backoffice/board/bbslist.asp?bbscode=2'>제품/서비스 구매상담</a></th>
 											<th scope="row"><a href='/backoffice/board/bbslist.asp?bbscode=3'>세미나 안내/소개 영상</a></th>
 											<th scope="row"><a href='/backoffice/board/bbslist.asp?bbscode=4'>제품/서비스 제안서</a></th>
@@ -306,6 +308,7 @@ function drawVisualization() {
 									<tbody>
 										<tr>
 											<td><% crmBoard 1,"b" %></td>
+											<td><% crmBoard 52,"b" %></td>
 											<td><% crmBoard 2,"b" %></td>
 											<td><% crmBoard 3,"b" %></td>
 											<td><% crmBoard 4,"b" %></td>
@@ -415,6 +418,68 @@ function drawVisualization() {
 											<td><% crmBoard 26,"b" %></td>
 											<td><% crmBoard 25,"b" %></td>
 											<td><% crmBoard 27,"b" %></td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</table>
+					</div>
+
+					<div style='clear:both; padding-top:20px;'>
+					<table cellpadding="0" cellspacing="0" width="100%">
+						<tr>
+							<td><h2>PMS 고객센터 등록현황</h2></td>
+						</tr>
+						<tr>
+							<td>
+								<table class="tbl_colMain">
+									<caption></caption>
+									<colgroup>
+										<col style="width: 50%" />
+										<col style="width: 50%" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="row"><a href='/backoffice/board/bbslist.asp?bbscode=38'>사용문의</a></th>
+											<th scope="row"><a href='/backoffice/board/bbslist.asp?bbscode=37'>자료실</a></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><% crmBoard 38,"b" %></td>
+											<td><% crmBoard 37,"b" %></td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</table>
+					</div>
+
+					<div style='clear:both; padding-top:20px;'>
+					<table cellpadding="0" cellspacing="0" width="100%">
+						<tr>
+							<td><h2>OmniEsol 고객센터 등록현황</h2></td>
+						</tr>
+						<tr>
+							<td>
+								<table class="tbl_colMain">
+									<caption></caption>
+									<colgroup>
+										<col style="width: 50%" />
+										<col style="width: 50%" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="row"><a href='/backoffice/board/bbslist.asp?bbscode=48'>사용문의</a></th>
+											<th scope="row"><a href='/backoffice/board/bbslist.asp?bbscode=47'>자료실</a></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><% crmBoard 48,"b" %></td>
+											<td><% crmBoard 47,"b" %></td>
 										</tr>
 									</tbody>
 								</table>
