@@ -103,7 +103,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<p class="black"><span><span>온라인 구매상담</span><strong>평일 09:00~18:00</strong></span></p>
 			</div>
 		</a>
-		<a href="http://pf.kakao.com/_xnFVzK" target="_blank" class="quick-right-re"><img src="/images/main/q__cont03.png" alt="카카오톡 상담" loading="lazy" decoding="async">
+		<a href="http://pf.kakao.com/_xnFVzK" target="_blank" rel="noopener noreferrer" class="quick-right-re"><img src="/images/main/q__cont03.png" alt="카카오톡 상담" loading="lazy" decoding="async">
 			<div class="quick-right-list">
 				<p class="kaka"><span><span>카카오톡 상담</span><strong>오픈채팅방</strong></span></p>
 			</div>

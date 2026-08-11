@@ -48,11 +48,18 @@ End Function
 	<meta name="naver-site-verification" content="567190b01310e71efefd0217e776de0cdf4abb6c" />
 	<meta name="google-site-verification" content="p6KsuwsxtTkDrsUf3hlUmxhnFnQefLdRsfsFkFiV48M" />
 
+	<!-- 2026-08-11 SEO 개선 (모바일 UI 컬러·iOS 홈 추가 최적화·리퍼러 정책) -->
+	<meta name="theme-color" content="#0369ec">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta name="apple-mobile-web-app-title" content="아이원소프트뱅크">
+	<meta name="referrer" content="strict-origin-when-cross-origin">
+
 	<!-- 2026-06-30 preconnect 최소화 — LCP 직결 호스트만, 나머지는 dns-prefetch로 강등 (PSI 권고) -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="preconnect" href="https://www.youtube-nocookie.com">
-	<link rel="dns-prefetch" href="https://kit.fontawesome.com">
+	<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 	<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
 	<link rel="dns-prefetch" href="https://i.ytimg.com">
 	<link rel="dns-prefetch" href="https://www.youtube.com">
@@ -146,16 +153,24 @@ End Function
 	<!-- /WebSite schema -->
 
 	<!-- <link rel="stylesheet" type="text/css" href="/build/font-awesome/css/font-awesome.min.css" /> -->
-	<!-- 2026-06-30 FontAwesome kit defer — 메인에서 미사용, 게시판/일부 페이지에서만 사용. 렌더링 차단 해제 -->
-	<script src="https://kit.fontawesome.com/3cb53a664a.js" crossorigin="anonymous" defer></script>
+	<!-- 2026-07 FontAwesome: 죽은 kit(403 Forbidden) 제거 → 무료 CDN CSS로 교체(게시판·커뮤니티 등 아이콘 복구). 메인(홈)은 FA 미사용이라 로드 제외(속도) -->
+	<%
+	' GB_isHome : 메인(홈) 여부. 홈에서 미사용인 라이브러리를 홈에서만 제외하기 위한 플래그 (다른 페이지는 기존과 동일)
+	Dim GB_isHome, GB_curPath
+	GB_curPath = LCase(Request.ServerVariables("SCRIPT_NAME"))
+	GB_isHome = (GB_curPath = "/index.asp" Or GB_curPath = "/")
+	If Not GB_isHome Then
+	%>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<% End If %>
 	<link rel="stylesheet" type="text/css" href="/common/font/SUIT-Variable.css" />
     <!-- 2026-06-30 Montserrat weight 축소 — italic 미사용, 100/200 미사용 → 실제 쓰이는 300~900만 -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="/common/css/jquery.ui.lastest.css" />
+	<% If Not GB_isHome Then %><link rel="stylesheet" type="text/css" href="/common/css/jquery.ui.lastest.css" /><% End If %>
 
 	<script type="text/javascript" src="/common/js/jquery.lastest.js" charset="utf-8"></script>
-	<script type="text/javascript" src="/common/js/jquery.ui.lastest.js" charset="utf-8"></script>
+	<% If Not GB_isHome Then %><script type="text/javascript" src="/common/js/jquery.ui.lastest.js" charset="utf-8"></script><% End If %>
 	<script type="text/javascript" src="/common/js/jquery.throttledresize.js" charset="utf-8" defer></script>
 	<script type="text/javascript" src="/common/js/jquery.rwdImageMaps.min.js" charset="utf-8" defer></script>
 
@@ -182,8 +197,10 @@ End Function
 	<link rel="stylesheet" type="text/css" href="/common/css/slick.css" />
 	<script type="text/javascript" src="/common/js/slick.js" charset="utf-8"></script>
 
+	<% If Not GB_isHome Then %>
 	<link rel="stylesheet" href="/common/css/jquery.fancybox.css">
 	<script type="text/javascript" src="/common/js/jquery.fancybox.js" charset="utf-8" defer></script>
+	<% End If %>
 
 	<link rel="stylesheet" href="/common/css/aos.css">
 	<script type="text/javascript" src="/common/js/aos.js" charset="utf-8"></script>
@@ -199,12 +216,14 @@ End Function
 
   	<!-- 개발 Library -->
 	<script type="text/javascript">var langCode = "<%=langCode%>";</script>
+	<% If Not GB_isHome Then %>
 	<script type="text/javascript" src="/_lib/js/plug-in/jquery.simplemodal/jquery.simplemodal.js"></script>
 	<link href="/_lib/css/editorContent.css" rel="stylesheet" type="text/css" />
+	<% End If %>
 	<script language="javascript" type="text/javascript" src="/_lib/functions.js"></script>
 	<script language="javascript" type="text/javascript" src="/_lib/boardcontrol.js"></script>
 	<script type="text/javascript" src="/_lib/js/plug-in/jquery.cookie/jquery.cookie.js"></script>
-	<link rel="stylesheet" href="/_lib/ckeditor5/content-styles.css" type="text/css">
+	<% If Not GB_isHome Then %><link rel="stylesheet" href="/_lib/ckeditor5/content-styles.css" type="text/css"><% End If %>
 	<!-- 개발 Library -->
 
 	<!-- 2024-07-08 Google tag (gtag.js) -->
